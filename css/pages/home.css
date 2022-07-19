@@ -24,6 +24,9 @@
     display: flex;
     justify-content: center;
 }
+.make-your-device-image > img{
+    object-fit: contain;
+}
 /* Make Your Device end */
 
 /* How sApp works start */

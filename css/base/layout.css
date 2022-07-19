@@ -26,6 +26,17 @@
     --ml9: calc(var(--ml8) + var(--increment));
     --ml10: calc(var(--ml9) + var(--increment));
     --ml11: calc(var(--ml10) + var(--increment));
+
+/* Page color section */
+
+--section-grey: #f6f9fe;
+--section-white: #fff;
+--text-black: #202121;
+--color-indigo: #5235de;
+--color-purple: #7c4fe0;
+
+/* Page color section */
+
 }
 
 .container {
@@ -346,3 +357,4 @@
         width: var(--col12);
     }
 }
+

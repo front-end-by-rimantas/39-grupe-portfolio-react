@@ -20,6 +20,10 @@
 /* Easily communicate end */
 
 /* Make Your Device start */
+.make-your-device-image{
+    display: flex;
+    justify-content: center;
+}
 /* Make Your Device end */
 
 /* How sApp works start */

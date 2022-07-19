@@ -1,5 +1,6 @@
 /* base */
-
+@import '../base/base.css';
+@import '../base/layout.css';
 /* 3rd-party */
 
 /* components */

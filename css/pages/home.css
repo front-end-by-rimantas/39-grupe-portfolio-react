@@ -79,6 +79,23 @@
 /* Make Your Device end */
 
 /* How sApp works start */
+.how-app-gradient{
+    background-image: linear-gradient(to bottom right, var(--color-indigo), var(--color-purple));
+}
+.how-app-align{
+    text-align: center;
+}
+.how-app-flexwrap{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.how-app-flexwrap > img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
 /* How sApp works end */
 
 /* Simple & Beautiful start */

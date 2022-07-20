@@ -16,7 +16,6 @@
     height: 100%;
     color: #fff;
     padding-top: 100px;
-    z-index: 9999;
   }
   .row.hero-block{
     height: 100%;
@@ -37,7 +36,7 @@
     height: 50px;
     border-radius: 25px;
     border: none;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
   }
   .btn-start-app{
     text-decoration: none;

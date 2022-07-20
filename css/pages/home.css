@@ -27,6 +27,9 @@
 .make-your-device-image > img{
     object-fit: contain;
 }
+.make-your-device-flex > h2{
+    margin-bottom: 25px;
+}
 .make-your-device-flex{
     display: flex;
     flex-flow: column nowrap;
@@ -36,31 +39,43 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    gap: 20px;
+    margin-bottom: 10px;
 }
 .wrapper-flex > .fontawe{
+    margin-right: 10px;
     font-size: 30px;
     text-align: center;
-    height: 60px;
-    width: 60px;
+    border-radius: 4px;
+    border: 1px solid rgba(198, 198, 198, 0.5);
+    box-shadow: 0px 0px 4px 0px rgba(179, 179, 179, 0.348);
+    height: 55px;
+    color: var(--color-purple);
+    width: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .wrapper-flex > p{
     flex-basis: 85%;
+    color: var(--text-grey);
 }
 .make-your-device-flex > button{
     align-self: flex-start;
     font-size: 16px;
     font-weight: 500;
     color: var(--section-white);
+    margin-top: 20px;
     width: 150px;
     height: 50px;
     border: none;
     border-radius: 6px;
     background-image: linear-gradient(to bottom right, var(--color-indigo), var(--color-purple));
 }
+.make-your-device-flex > button:hover{
+    box-shadow: 4px 8px 20px 0 rgb(212, 212, 212);
+    cursor: pointer;
+}
+
 /* Make Your Device end */
 
 /* How sApp works start */

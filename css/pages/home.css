@@ -1,6 +1,7 @@
 /* base */
 @import '../base/base.css';
 @import '../base/layout.css';
+@import '../base/font-awesome.min.css';
 /* 3rd-party */
 
 /* components */
@@ -15,28 +16,76 @@
 
 /* Express Functionality start */
 
+.container > .row > .vectors {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  border-radius: 25px 25px 25px 25px;
+  padding: 10px 151px 10px 26px;
+  box-shadow: 0 1px 3px #0008;
+}
+.container > .row > .vectors > .fa {
+color:#7651D8;
+}
+
+.container > .row > .vectors > .eone {
+color:#7651D8;
+}
+
 .container > .row > .etitle {
-font-size: 50px;
+font-size: 40px;
 color: black;
+margin-bottom: 15px;
+font-weight: 900;
+}
+
+.container > .row > .eline {
+  width: 70px;
+  height: 3px;
+  background-color: #7651D8;
 }
 
 .container > .row > .etext {
 font-size: 16px;
-color: black;
-    }
+color: #565656;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 100px;
+line-height: 1.6;
+}
+
+.etext2 {
+font-size: 14px;
+color: #565656;
+font-family: 'Poppins', sans-serif;
+line-height: 1.6;
+}
+.container > .row > .eblocks {
+  display: flex;
+  gap: 20px;
+}
 
 .container > .row > .eblock {
-    padding: 40px 30px;
-    display: flex;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    flex-direction: column;
-    align-items: center;
+padding: 44px 36px;
+display: flex;
+text-align: center;
+border-radius: 10px;
+background-color: #FFFFFF;
+flex-direction: column;
+align-items: center;
+box-shadow: 0 4px 15px #0008;
+margin-top: 33px;
 }
 
 .icon {
-    width: 15%;
+width: 15%;
+}
+
+.eparagraf {
+color: black;
+text-decoration: none;
+font-size: 20px;
+font-weight: 900;
+margin: 10px 0;
 }
 /* Express Functionality end */
 

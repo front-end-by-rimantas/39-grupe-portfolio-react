@@ -41,7 +41,6 @@
 .container > .row > [class*='col-'] {
     float: left;
     margin: 10px var(--half-gap);
-    border: 1px solid red;
 }
 .container > .row > .col-1 {
     width: var(--col1);
@@ -161,6 +160,7 @@
     .container > .row > .col-sm-12 {
         width: var(--col12);
     }
+
 }
 
 @media (min-width: 768px) {
@@ -207,6 +207,7 @@
     .container > .row > .col-md-12 {
         width: var(--col12);
     }
+
 }
 
 @media (min-width: 992px) {

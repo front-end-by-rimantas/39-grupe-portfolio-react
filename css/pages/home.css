@@ -9,6 +9,8 @@
 
 /* header start */
 /* header end */
+
+/* hero start */
   .hero{
     background: linear-gradient(to bottom right, rgba(77, 50, 219, 0.9), rgba(135, 57, 228, 0.9)), url('../../img/blog-4.jpg') no-repeat left;
     background-size: cover;
@@ -112,9 +114,7 @@
     }
   }
 
-/* hero start */
-
-/* hero end */
+  /* hero end */
 
 /* Express Functionality start */
 /* Express Functionality end */

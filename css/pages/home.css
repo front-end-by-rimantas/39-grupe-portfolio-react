@@ -1,6 +1,7 @@
 /* base */
 @import '../base/base.css';
 @import '../base/layout.css';
+@import '../base/font-awesome.min.css';
 /* 3rd-party */
 
 /* components */
@@ -11,10 +12,384 @@
 /* header end */
 
 /* hero start */
-/* hero end */
+  .hero{
+    background-color: #5434DD;
+    background: linear-gradient(to bottom right, rgba(77, 50, 219, 0.9), rgba(135, 57, 228, 0.9)), url('../../img/blog-4.jpg') no-repeat scroll center center / cover;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding-top: 60px;
+    position: relative;
+  }
+  .row.hero-block{
+    height: 100%;
+    align-items: center;
+  }
+  .title-block > h1.title{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .title-block > .description{
+    margin: 24px 0;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+  .btn-start-app{
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  .btn-start-app{
+    text-decoration: none;
+    color: #444;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: #fff;
+  }
+  .btn-start-app:hover{
+    background-image: linear-gradient(to bottom right, #5434DD, #883AE5);
+    color: #fff;
+  }
+  .hero > .hero-block > .reg-form{
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
 
-/* about me start */
-/* about me end */
+  }
+  .reg-form > h3{
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #222;
+  }
+  .reg-form > .form-description {
+    font-size: 1.1em;
+    line-height: 1.4;
+    padding: 16px 0;
+    font-weight: 200;
+    color: #666;
+  }
+  .reg-form > input{
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: #000;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  }
+  .reg-form > input::placeholder{
+    padding: 0 15px;
+}
+  .reg-form > button{
+    height: 50px;
+    background-color: #5434DD;
+    background-image: linear-gradient(to bottom right, #5434DD, #883AE5);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-size: 15px;
+  }
+  .hero-block > .reg-form > p.terms{
+    color: #565656;
+    font-size: 13px;
+  }
+ .terms > a{
+    color: #222;
+  }
 
-/* services start */
-/* services end */
+  .hero > svg{
+    overflow: hidden;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    transform: rotate(180deg);
+    vertical-align: middle;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+
+  @media (min-width: 576px){
+    .title-block > h1.title{
+      font-size: 2em;
+    }
+  }
+  @media (min-width: 768px) {
+    .title-block > h1.title{
+      font-size: 2.8em;
+    }
+    .hero{
+      height: 1000px;
+    }
+  }
+  @media (min-width: 992px) {
+    .title-block > h1.title{
+      font-size: 4em;
+    }
+    .hero{
+      height: 800px;
+    }
+  }
+  @media (min-width: 1200px){
+    .hero{
+      height: 800px;
+    }
+  }
+
+  /* hero end */
+
+/* Express Functionality start */
+
+.container > .row > .vectors {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  border-radius: 25px 25px 25px 25px;
+  padding: 10px 163px 10px 26px;
+  box-shadow: 0 1px 3px #0008;
+  align-items: center;
+}
+.container > .row > .vectors > .fa {
+color:#7651D8;
+}
+
+.container > .row > .vectors > .eone {
+color:#7651D8;
+}
+
+.container > .row > .vectors > .etwo {
+color:black;
+}
+
+.container > .row > .etitle {
+font-size: 40px;
+color: black;
+margin-bottom: 15px;
+font-weight: 600;
+}
+
+.container > .row > .eline {
+  width: 70px;
+  height: 3px;
+  background-color: #7651D8;
+}
+
+.container > .row > .etext {
+font-size: 16px;
+color: #565656;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 100px;
+line-height: 1.6;
+}
+
+.etext2 {
+font-size: 14px;
+color: #565656;
+font-family: 'Poppins', sans-serif;
+line-height: 1.6;
+}
+.container > .row > .eblocks {
+  display: flex;
+  gap: 20px;
+}
+
+.container > .row > .eblock  {
+padding: 44px 36px;
+display: flex;
+text-align: center;
+border-radius: 10px;
+background-color: #FFFFFF;
+flex-direction: column;
+align-items: center;
+box-shadow: 0 4px 15px #0008;
+margin-top: 33px;
+}
+
+.container > .row > .eblock6  {
+padding: 44px 36px;
+display: flex;
+text-align: center;
+border-radius: 10px;
+background-color: #FFFFFF;
+flex-direction: column;
+align-items: center;
+box-shadow: 0 4px 15px #0008;
+margin-top: 33px;
+  }
+
+.icon {
+width: 15%;
+}
+
+.eparagraf {
+color: black;
+text-decoration: none;
+font-size: 20px;
+font-weight: 900;
+margin: 10px 0;
+}
+
+@media (min-width: 576px){
+  .container > .row > .etitle{
+    font-size: 2em;
+  }
+}
+@media (min-width: 768px) {
+  .container > .row > .etitle{
+    font-size: 2.8em;
+  }
+}
+@media (min-width: 992px) {
+  .container > .row > .etitle{
+    font-size: 3em;
+  }
+}
+@media (min-width: 768px) {
+  .container > .row > .eblock6 {
+  padding: 44px 32px;
+  }
+}
+@media (min-width: 992px) {
+  .container > .row > .eblock6{
+    padding: 44px 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container > .row > .eblock6{
+    padding: 44px 36px;
+  }
+}
+/* Express Functionality end */
+
+/* Easily communicate start */
+/* Easily communicate end */
+
+/* Make Your Device start */
+.make-your-device-image{
+    display: flex;
+    justify-content: center;
+}
+.make-your-device-image > img{
+    object-fit: contain;
+}
+.make-your-device-flex > h2{
+    margin-bottom: 25px;
+}
+.make-your-device-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+.wrapper-flex{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.wrapper-flex > .fontawe{
+    margin-right: 10px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid rgba(198, 198, 198, 0.5);
+    box-shadow: 0px 0px 4px 0px rgba(179, 179, 179, 0.348);
+    height: 55px;
+    color: var(--color-purple);
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper-flex > p{
+    flex-basis: 85%;
+    color: var(--text-grey);
+}
+.make-your-device-flex > button{
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--section-white);
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom right, var(--color-indigo), var(--color-purple));
+}
+.make-your-device-flex > button:hover{
+    box-shadow: 4px 8px 20px 0 rgb(212, 212, 212);
+    cursor: pointer;
+}
+
+/* Make Your Device end */
+
+/* How sApp works start */
+.how-app-gradient{
+    background-image: linear-gradient(115deg, var(--color-indigo), var(--color-purple));
+}
+.how-app-gradient h2, h3, p {
+    color: var(--section-white);
+}
+.how-app-align{
+    text-align: center;
+}
+.how-app-flexwrap{
+    text-align: center;
+    gap:20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.how-app-flexwrap > img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.how-app-gradient .relative-pseudo{
+    position: relative;
+}
+.how-app-gradient .row .relative-pseudo .pseudo{
+    position: absolute;
+    font-size: 70px;
+    color: var(--section-white);
+    right:calc(var(--gap) * -1);
+    transition: all 0.3s;
+}
+.how-app-gradient .relative-pseudo:hover .pseudo{
+    right:calc((var(--gap) * -1) - 5px)
+}
+/* How sApp works end */
+
+/* Simple & Beautiful start */
+/* Simple & Beautiful end */
+
+/* Unlock Full Power start */
+/* Unlock Full Power end */
+
+/* Frequently Asked Questions start */
+/* Frequently Asked Questions end */
+
+/* Our Team Experts start */
+/* Our Team Experts end */
+
+/* sApp is available start */
+/* sApp is available end */
+
+/* Subscribe to get updates start */
+/* Subscribe to get updates end */
+
+/* Stay Tuned start */
+/* Stay Tuned end */
+
+/* Footer start */
+/* Footer end */

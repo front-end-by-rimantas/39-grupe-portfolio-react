@@ -12,7 +12,111 @@
 /* header end */
 
 /* hero start */
-/* hero end */
+  .hero{
+    background-color: #5434DD;
+    background: linear-gradient(to bottom right, rgba(77, 50, 219, 0.9), rgba(135, 57, 228, 0.9)), url('../../img/blog-4.jpg') no-repeat left;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding-top: 100px;
+  }
+  .row.hero-block{
+    height: 100%;
+    align-items: center;
+  }
+  .title-block > h1{
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .title-block > .description{
+    margin: 24px 0;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+  .btn-start-app{
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  .btn-start-app{
+    text-decoration: none;
+    color: #444;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  .btn-start-app:hover{
+    background-image: linear-gradient(to bottom right, #5434DD, #883AE5);
+    color: #fff;
+  }
+  .reg-form{
+    color: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 60px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .reg-form > h3{
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #222;
+  }
+  .reg-form > .form-description {
+    font-size: 1.1em;
+    line-height: 1.4;
+    padding: 16px 0;
+    font-weight: 200;
+  }
+  .reg-form > input{
+    height: 50px;
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: #000;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+  }
+  .reg-form > input::placeholder{
+    padding: 0 15px;
+}
+  .reg-form > button{
+    height: 50px;
+    background-color: #5434DD;
+    background-image: linear-gradient(to bottom right, #5434DD, #883AE5);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-size: 15px;
+  }
+  .terms{
+    font-size: 13px;
+  }
+  .terms > a{
+    color: #000;
+  }
+
+  @media (min-width: 576px){
+    .title-block > h1{
+      font-size: 2em;
+    }
+  }
+  @media (min-width: 768px) {
+    .title-block > h1{
+      font-size: 2.8em;
+    }
+  }
+  @media (min-width: 992px) {
+    .title-block > h1{
+      font-size: 4em;
+    }
+  }
+
+  /* hero end */
 
 /* Express Functionality start */
 

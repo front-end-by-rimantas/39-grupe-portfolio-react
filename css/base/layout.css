@@ -68,6 +68,8 @@
 .container > .row > [class*='col-'] {
     float: left;
     margin: 10px var(--half-gap);
+
+    /* border: 1px solid red; */
 }
 .container > .row > .col-1 {
     width: var(--col1);
@@ -199,7 +201,6 @@
     .container > .row > .col-sm-12 {
         width: var(--col12);
     }
-
     .container > .row > .ml-sm-0 {
         margin-left: var(--ml0);
     }
@@ -294,7 +295,6 @@
     .container > .row > .col-md-12 {
         width: var(--col12);
     }
-
     .container > .row > .ml-md-0 {
         margin-left: var(--ml0);
     }
@@ -352,6 +352,9 @@
     .container > .row {
         width: 960px;
         margin: 0 calc(50% - 480px);
+    }
+    .container > .row.d-flex{
+        display: flex;
     }
     .container > .row > .col-lg-1 {
         width: var(--col1);

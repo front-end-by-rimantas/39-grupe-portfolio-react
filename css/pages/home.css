@@ -1,6 +1,7 @@
 /* base */
 @import '../base/base.css';
 @import '../base/layout.css';
+@import '../base/font-awesome.min.css';
 /* 3rd-party */
 
 /* components */
@@ -118,15 +119,182 @@
   /* hero end */
 
 /* Express Functionality start */
+
+.container > .row > .vectors {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  border-radius: 25px 25px 25px 25px;
+  padding: 10px 151px 10px 26px;
+  box-shadow: 0 1px 3px #0008;
+}
+.container > .row > .vectors > .fa {
+color:#7651D8;
+}
+
+.container > .row > .vectors > .eone {
+color:#7651D8;
+}
+
+.container > .row > .vectors > .etwo {
+color:black;
+}
+
+.container > .row > .etitle {
+font-size: 40px;
+color: black;
+margin-bottom: 15px;
+font-weight: 900;
+}
+
+.container > .row > .eline {
+  width: 70px;
+  height: 3px;
+  background-color: #7651D8;
+}
+
+.container > .row > .etext {
+font-size: 16px;
+color: #565656;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 100px;
+line-height: 1.6;
+}
+
+.etext2 {
+font-size: 14px;
+color: #565656;
+font-family: 'Poppins', sans-serif;
+line-height: 1.6;
+}
+.container > .row > .eblocks {
+  display: flex;
+  gap: 20px;
+}
+
+.container > .row > .eblock {
+padding: 44px 36px;
+display: flex;
+text-align: center;
+border-radius: 10px;
+background-color: #FFFFFF;
+flex-direction: column;
+align-items: center;
+box-shadow: 0 4px 15px #0008;
+margin-top: 33px;
+}
+
+.icon {
+width: 15%;
+}
+
+.eparagraf {
+color: black;
+text-decoration: none;
+font-size: 20px;
+font-weight: 900;
+margin: 10px 0;
+}
 /* Express Functionality end */
 
 /* Easily communicate start */
 /* Easily communicate end */
 
 /* Make Your Device start */
+.make-your-device-image{
+    display: flex;
+    justify-content: center;
+}
+.make-your-device-image > img{
+    object-fit: contain;
+}
+.make-your-device-flex > h2{
+    margin-bottom: 25px;
+}
+.make-your-device-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+.wrapper-flex{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.wrapper-flex > .fontawe{
+    margin-right: 10px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid rgba(198, 198, 198, 0.5);
+    box-shadow: 0px 0px 4px 0px rgba(179, 179, 179, 0.348);
+    height: 55px;
+    color: var(--color-purple);
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper-flex > p{
+    flex-basis: 85%;
+    color: var(--text-grey);
+}
+.make-your-device-flex > button{
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--section-white);
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    background-image: linear-gradient(to bottom right, var(--color-indigo), var(--color-purple));
+}
+.make-your-device-flex > button:hover{
+    box-shadow: 4px 8px 20px 0 rgb(212, 212, 212);
+    cursor: pointer;
+}
+
 /* Make Your Device end */
 
 /* How sApp works start */
+.how-app-gradient{
+    background-image: linear-gradient(115deg, var(--color-indigo), var(--color-purple));
+}
+.how-app-gradient h2, h3, p {
+    color: var(--section-white);
+}
+.how-app-align{
+    text-align: center;
+}
+.how-app-flexwrap{
+    text-align: center;
+    gap:20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.how-app-flexwrap > img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.how-app-gradient .relative-pseudo{
+    position: relative;
+}
+.how-app-gradient .row .relative-pseudo .pseudo{
+    position: absolute;
+    font-size: 70px;
+    color: var(--section-white);
+    right:calc(var(--gap) * -1);
+    transition: all 0.3s;
+}
+.how-app-gradient .relative-pseudo:hover .pseudo{
+    right:calc((var(--gap) * -1) - 5px)
+}
 /* How sApp works end */
 
 /* Simple & Beautiful start */

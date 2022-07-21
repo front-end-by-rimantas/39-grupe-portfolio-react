@@ -68,7 +68,6 @@
 .container > .row > [class*='col-'] {
     float: left;
     margin: 10px var(--half-gap);
-    border: 1px solid red;
 }
 .container > .row > .col-1 {
     width: var(--col1);

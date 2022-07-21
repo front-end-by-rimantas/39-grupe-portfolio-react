@@ -32,6 +32,10 @@ color:#7651D8;
 color:#7651D8;
 }
 
+.container > .row > .vectors > .etwo {
+color:black;
+}
+
 .container > .row > .etitle {
 font-size: 40px;
 color: black;

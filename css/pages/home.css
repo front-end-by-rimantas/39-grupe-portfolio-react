@@ -12,6 +12,7 @@
 
 /* hero start */
   .hero{
+    background-color: #5434DD;
     background: linear-gradient(to bottom right, rgba(77, 50, 219, 0.9), rgba(135, 57, 228, 0.9)), url('../../img/blog-4.jpg') no-repeat left;
     background-size: cover;
     width: 100%;

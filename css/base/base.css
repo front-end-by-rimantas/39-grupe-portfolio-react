@@ -12,6 +12,9 @@ body {
 
 }
 
+.section-grey{
+    background-color: var(--section-grey);
+}
 h1, h2, h3{
     color: var(--text-black);
 }
@@ -34,6 +37,6 @@ p{
     font-weight: 400;
 }
 
-.background-grey{
+.background-white{
     background-color: var(--section-white);   
 }

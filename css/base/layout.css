@@ -149,6 +149,9 @@
     :root {
         --half-gap: 15px;
     }
+    .visible-sm-inline {
+        display: inline !important;
+    }
     .visible-sm {
         display: inline-block !important;
     }
@@ -243,6 +246,9 @@
     :root {
         --half-gap: 20px;
     }
+    .visible-md-inline {
+        display: inline !important;
+    }
     .visible-md {
         display: inline-block !important;
     }
@@ -336,6 +342,9 @@
 @media (min-width: 992px) {
     :root {
         --half-gap: 25px;
+    }
+    .visible-lg-inline {
+        display: inline !important;
     }
     .visible-lg {
         display: inline-block !important;
@@ -435,6 +444,9 @@
     :root {
         --half-gap: 30px;
     }
+    .visible-xl-inline {
+        display: inline !important;
+    }
     .visible-xl {
         display: inline-block !important;
     }
@@ -529,6 +541,9 @@
 @media (min-width: 1400px) {
     :root {
         --half-gap: 30px;
+    }
+    .visible-xxl-inline {
+        display: inline !important;
     }
     .visible-xxl {
         display: inline-block !important;

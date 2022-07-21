@@ -14,18 +14,19 @@
 /* hero start */
   .hero{
     background-color: #5434DD;
-    background: linear-gradient(to bottom right, rgba(77, 50, 219, 0.9), rgba(135, 57, 228, 0.9)), url('../../img/blog-4.jpg') no-repeat left;
-    background-size: cover;
+    background: linear-gradient(to bottom right, rgba(77, 50, 219, 0.9), rgba(135, 57, 228, 0.9)), url('../../img/blog-4.jpg') no-repeat scroll center center / cover;
     width: 100%;
     height: 100%;
     color: #fff;
-    padding-top: 100px;
+    padding-top: 60px;
+    position: relative;
   }
   .row.hero-block{
     height: 100%;
     align-items: center;
   }
-  .title-block > h1{
+  .title-block > h1.title{
+    color: #fff;
     font-size: 2em;
     font-weight: 600;
     line-height: 1.2;
@@ -47,19 +48,21 @@
     color: #444;
     letter-spacing: 1px;
     font-weight: bold;
+    background-color: #fff;
   }
   .btn-start-app:hover{
     background-image: linear-gradient(to bottom right, #5434DD, #883AE5);
     color: #fff;
   }
-  .reg-form{
+  .hero > .hero-block > .reg-form{
     color: #000;
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 70px 60px;
+    padding: 50px;
     background-color: #fff;
     border-radius: 5px;
+
   }
   .reg-form > h3{
     font-size: 2em;
@@ -72,6 +75,7 @@
     line-height: 1.4;
     padding: 16px 0;
     font-weight: 200;
+    color: #666;
   }
   .reg-form > input{
     height: 50px;
@@ -93,26 +97,50 @@
     margin: 15px 0;
     font-size: 15px;
   }
-  .terms{
+  .hero-block > .reg-form > p.terms{
+    color: #565656;
     font-size: 13px;
   }
-  .terms > a{
-    color: #000;
+ .terms > a{
+    color: #222;
+  }
+
+  .hero > svg{
+    overflow: hidden;
+    width: 100%;
+    line-height: 0;
+    direction: ltr;
+    transform: rotate(180deg);
+    vertical-align: middle;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
   }
 
   @media (min-width: 576px){
-    .title-block > h1{
+    .title-block > h1.title{
       font-size: 2em;
     }
   }
   @media (min-width: 768px) {
-    .title-block > h1{
+    .title-block > h1.title{
       font-size: 2.8em;
+    }
+    .hero{
+      height: 1000px;
     }
   }
   @media (min-width: 992px) {
-    .title-block > h1{
+    .title-block > h1.title{
       font-size: 4em;
+    }
+    .hero{
+      height: 800px;
+    }
+  }
+  @media (min-width: 1200px){
+    .hero{
+      height: 800px;
     }
   }
 

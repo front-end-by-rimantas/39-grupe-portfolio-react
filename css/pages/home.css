@@ -1,4 +1,3 @@
-/* base */
 @import '../base/base.css';
 @import '../base/layout.css';
 /* 3rd-party */
@@ -17,6 +16,97 @@
 /* Express Functionality end */
 
 /* Easily communicate start */
+
+.body {
+    background-color: #F6F9FE;
+}
+
+.container > .row > .tblock {
+    font-size: 25px;
+    font-weight: normal;
+    font-family: Roboto, 'Open Sans', BlinkMacSystemFont, 'Segoe UI','Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    color: black;
+    line-height: 1.5;
+    
+}
+
+.description {
+    font-family: Roboto, 'Open Sans', BlinkMacSystemFont, 'Segoe UI','Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+    line-height: 1.2;
+    font-weight: 450;
+    color: #6C6C6C;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.test .fa {
+    color: #7C4FE0;
+    margin-right:5px ;
+    /* line-height:2.5; */
+    
+}
+.test{
+    font-family: Roboto, 'Open Sans', BlinkMacSystemFont, 'Segoe UI','Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';;
+    display: flex;
+    align-items: center;
+}
+
+.fa-li, li{
+    vertical-align: baseline;
+}
+
+
+
+.fa-ul {
+    font-family: Roboto, 'Open Sans', BlinkMacSystemFont, 'Segoe UI','Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';;
+    color: #6C6C6C;
+    font-size: 15px;
+    line-height: 2.5;
+    margin-left: 7px
+}
+.bell {
+    display: inline-block;
+    padding: 1.0em 1.0em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color:#7C4FE0;
+    background-color: white;
+    border: 0.1em solid #F6F9FE;
+    border-radius: 3px;
+    box-shadow: 0 0px 5px #BDC2C9;
+}
+
+.envelope {
+    display: inline-block;
+    padding: 1.0em 1.0em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color:#7C4FE0;
+    background-color: white;
+    border: 0.1em solid #F6F9FE;
+    border-radius: 3px;
+    box-shadow: 0 0px 5px #BDC2C9;
+}
+.camera {
+    display: inline-block;
+    padding: 1.0em 1.0em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color:#7C4FE0;
+    background-color: white;
+    border: 0.1em solid #F6F9FE;
+    border-radius: 3px;
+    box-shadow: 0 0px 5px #BDC2C9;
+
+}
+
+
 /* Easily communicate end */
 
 /* Make Your Device start */

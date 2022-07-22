@@ -270,9 +270,8 @@ margin: 10px 0;
 /* Express Functionality end */
 
 /* Easily communicate start */
-
-.body {
-    background-color: #F6F9FE;
+.easily-background-color{
+  background-color: #F6F9FE;
 }
 
 .container > .row > .tblock {
@@ -284,7 +283,7 @@ margin: 10px 0;
     
 }
 
-.description {
+.tblock .description {
     font-family: Roboto, 'Open Sans', BlinkMacSystemFont, 'Segoe UI','Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
     line-height: 1.2;
     font-weight: 450;
@@ -358,6 +357,9 @@ margin: 10px 0;
     border-radius: 3px;
     box-shadow: 0 0px 5px #BDC2C9;
 
+}
+.easily-background-color .img{
+  scale: (0.5);
 }
 
 

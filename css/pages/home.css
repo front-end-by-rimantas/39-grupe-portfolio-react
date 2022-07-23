@@ -285,7 +285,7 @@ margin: 10px 0;
 
 .tblock .description {
     font-family: Roboto, 'Open Sans', BlinkMacSystemFont, 'Segoe UI','Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
-    line-height: 1.2;
+    line-height: 1.7;
     font-weight: 450;
     color: #6C6C6C;
     font-size: 15px;
@@ -310,7 +310,7 @@ margin: 10px 0;
 
 
 
-.fa-ul {
+.row > .tblock > .fa-ul {
     font-family: Roboto, 'Open Sans', BlinkMacSystemFont, 'Segoe UI','Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';;
     color: #6C6C6C;
     font-size: 15px;

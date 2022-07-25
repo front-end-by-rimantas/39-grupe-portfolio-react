@@ -181,6 +181,9 @@
   /* hero end */
 
 /* Express Functionality start */
+.express-block{
+  background-color: #fff;
+}
 
 .container > .row > .vectors {
   display: flex;
@@ -669,6 +672,74 @@ margin: 10px 0;
 /* Our Team Experts end */
 
 /* sApp is available start */
+section.container.app-store{
+  padding: 80px 0;
+}
+.app-store{
+  width: 100%;
+  background-color: rgba(16, 16, 45, 0.8);
+}
+.app-store::after{
+  content: '';
+  display: inline-block;
+  background-image: url('../../img/download-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+h2.store-title{
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+.store-content > .store-desc{
+  text-align: center;
+  margin: 10px 0 30px;
+}
+.link-block{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.store-content > .link-block > .store-link > img{
+  width: 160px;
+  height: 51px;
+}
+.store-content > p.footnote{
+  text-align: center;
+  font-style: italic;
+  margin-top: 16px;
+}
+@media (min-width: 576px) {
+  .store-content > h2{
+    font-size: 30px;
+  }
+  .store-content > .link-block > .store-link > img{
+    width: 180px;
+    height: 59px;
+  }
+}
+@media (min-width: 768px) {
+  .store-content > h2{
+    font-size: 36px;
+  }
+}
+  @media (min-width: 992px) {
+    .store-content > h2{
+      font-size: 40px;
+    }
+    .store-content > .link-block > .store-link > img{
+      width: 190px;
+      height: 51px;
+    }
+  }
 /* sApp is available end */
 
 /* Subscribe to get updates start */

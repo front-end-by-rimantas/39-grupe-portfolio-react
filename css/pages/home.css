@@ -666,6 +666,43 @@ margin: 10px 0;
 /* Frequently Asked Questions end */
 
 /* Our Team Experts start */
+.our-team-margin-bottom{
+  margin-bottom: 60px !important;
+}
+.our-team-structure{
+  margin-bottom: 60px;
+}
+.our-team-text{
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  color: var(--text-grey);
+}
+.our-team-text > p{
+  color: var(--text-grey);
+}
+.our-team-text > h2{
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.our-team-wrapper{
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  gap:20px;
+}
+.our-team-image-wrapper{
+  overflow: hidden;
+  border-radius: 90px;
+}
+.our-team-image-wrapper img{
+  object-fit: contain;
+  width: 100%;  
+}
+.wrapper-absolute{
+  position: absolute;
+}
+
 /* Our Team Experts end */
 
 /* sApp is available start */

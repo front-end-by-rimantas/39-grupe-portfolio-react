@@ -7,6 +7,36 @@ body * {
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-        sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+}
+
+.section-grey{
+    background-color: var(--section-grey);
+}
+h1, h2, h3{
+    color: var(--text-black);
+}
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+
+}
+
+p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.background-white{
+    background-color: var(--section-white);   
 }

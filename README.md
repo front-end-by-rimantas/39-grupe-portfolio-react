@@ -1,18 +1,12 @@
-![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
-![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square)
-![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
-![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
-[![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
-
-# Daniels portfolio
+# 39-team-react portfolio
 
 _39 group website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://front-end-by-rimantas.github.io/39-grupe-portfolio/
+Site published at: https://front-end-by-rimantas.github.io/39-team-react/
 
-Design: http://www.innovationplans.com/idesign/daniels/particles.html
+Design: https://react.theme-land.com/theme-five
 
 ## Project features
 
@@ -29,4 +23,4 @@ Design: http://www.innovationplans.com/idesign/daniels/particles.html
 
 ## Authors
 
-Rimantas: [Github](https://github.com/belauzas)
+39-team-react: [Github](https://github.com/orgs/front-end-by-rimantas/teams/39-team-react/)

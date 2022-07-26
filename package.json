@@ -1,7 +1,7 @@
 {
   "name": "39-grupe-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "_39 group website project_",
   "main": "index.js",
   "scripts": {
     "dev": "dead-server --port=3010 --host=localhost",
@@ -11,6 +11,16 @@
   "author": "Rimantas",
   "license": "MIT",
   "devDependencies": {
-    "dead-server": "^1.0.6"
-  }
+    "dead": "^0.0.2",
+    "dead-server": "^1.0.6",
+    "server": "^1.0.37"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/front-end-by-rimantas/39-grupe-portfolio-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/front-end-by-rimantas/39-grupe-portfolio-react/issues"
+  },
+  "homepage": "https://github.com/front-end-by-rimantas/39-grupe-portfolio-react#readme"
 }

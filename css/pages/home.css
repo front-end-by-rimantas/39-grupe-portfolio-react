@@ -539,6 +539,7 @@ margin: 10px 0;
   position: relative;
   margin-bottom: 30px;
   font-weight: 600;
+  font-size: 24px;
 }
 .sbtitle::after {
   position: absolute;
@@ -554,12 +555,15 @@ margin: 10px 0;
 .sbtext {
   color: var(--text-grey);
   text-align: center;
+  
 }
-.carousel-one {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 60px;
+
+.container > .row > .carousel-one {
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 20px;
+margin-top: 80px;
 }
 
 .sbtop > p {
@@ -567,14 +571,14 @@ margin: 10px 0;
 }
 
 .img {
-width: 20%;
+width: 70%;
   }
 
-.dotis {
+.container > .row > .dotis {
 display: flex;
 flex-direction: row;
 justify-content: center;
-margin-top: 20px; 
+margin-bottom: 180px; 
 }
 
 
@@ -590,6 +594,7 @@ border-radius: 100%;
 .active, .dots:hover {
 background-color: var(--color-purple);
 }
+
 .presentation {
   display: flex;
   justify-content: center;
@@ -619,7 +624,7 @@ background-color: var(--color-purple);
   justify-content: center;
   flex-direction: row;
   align-items: center;
-  color: gold;
+  color: #F2A63B;
 }
 
 .fa {
@@ -627,22 +632,39 @@ background-color: var(--color-purple);
 }
 
 @media (min-width: 576px) {
-  .sbtop > .sbtitle {
+.sbtitle {
     font-size: 30px;
   }
+  .carousel-one > .img{
+    width: 50%;
+  }
 }
+
 @media (min-width: 768px) {
-  .sbtop > .sbtitle {
+  .sbtitle {
     font-size: 36px;
   }
-
+  .carousel-one > .img{
+    width: 45%;
+  }
 }
 @media (min-width: 992px) {
-  .sbtop > .sbtitle {
+  .sbtitle {
     font-size: 40px;
+  }
+  .carousel-one > .img{
+    width: 30%;
   }
 }
 
+@media (min-width: 1200px){
+  .sbtitle {
+    font-size: 40px;
+}
+.carousel-one > .img{
+  width: 23%;
+  }
+}
 /* Simple & Beautiful end */
 
 /* Unlock Full Power start */

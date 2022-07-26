@@ -673,7 +673,7 @@ margin: 10px 0;
 
 /* sApp is available start */
 section.container.app-store{
-  padding: 80px 0;
+  padding: 40px 0;
 }
 .app-store{
   width: 100%;
@@ -698,10 +698,12 @@ h2.store-title{
   color: #fff;
   text-align: center;
   font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
 }
 .store-content > .store-desc{
   text-align: center;
-  margin: 10px 0 30px;
+  margin: 16px 0 30px;
 }
 .link-block{
   display: flex;
@@ -730,6 +732,9 @@ h2.store-title{
   .store-content > h2{
     font-size: 36px;
   }
+  section.container.app-store{
+    padding: 60px 0;
+  }
 }
   @media (min-width: 992px) {
     .store-content > h2{
@@ -738,6 +743,9 @@ h2.store-title{
     .store-content > .link-block > .store-link > img{
       width: 190px;
       height: 51px;
+    }
+    section.container.app-store{
+      padding: 90px 0;
     }
   }
 /* sApp is available end */

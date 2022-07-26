@@ -691,7 +691,6 @@ section.container.app-store{
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.5;
 }
 
 h2.store-title{
@@ -746,6 +745,11 @@ h2.store-title{
     }
     section.container.app-store{
       padding: 90px 0;
+    }
+  }
+  @media (min-width: 1200px){
+    .store-content > .store-desc{
+      margin: 16px -10px 30px;
     }
   }
 /* sApp is available end */

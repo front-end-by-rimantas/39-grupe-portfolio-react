@@ -678,4 +678,47 @@ margin: 10px 0;
 /* Stay Tuned end */
 
 /* Footer start */
+section.container.footer{
+  padding: 100px 0 20px;
+}
+.footer > .links-block{
+  padding-bottom: 80px;
+}
+.useful > ul > li, .help > ul > li{
+  list-style-type: none;
+  padding: 8px 0;
+}
+.useful > ul > li > a, .help > ul > li > a{
+  color: #444;
+}
+.row > .col-3 > h3{
+  color: #222;
+}
+.socials > p{
+  color: #565656;
+  margin: 8px 0 16px;
+}
+.socials > .social-link > a{
+  text-decoration: none;
+}
+.copyright-block::before{
+  content: '';
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);;
+  margin: 20px var(--half-gap);
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright-block > .copyright p{
+    color: #565656
+}
+.copyright > p > a{
+    text-decoration: none;
+    color: #444;
+}
+.copyright > p > i{
+    padding-top: 5px;
+}
 /* Footer end */

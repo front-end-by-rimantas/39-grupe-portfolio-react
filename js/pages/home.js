@@ -1,9 +1,6 @@
-console.log('home page...');
-
 // header start
 const navHoverDOM = document.querySelectorAll('[data-hover-button]')
 const dropDownDOM = document.querySelectorAll('[data-dropdown-1]')
-console.log(navHoverDOM);
 
 navHoverDOM[0].addEventListener("mouseover", function () {
     dropDownDOM[0].classList.add("visible-flex")

@@ -20,15 +20,63 @@
         <div class="row">
             <div class="col-12 flex-wrap">
                 <a href="#">
-                    <img src="./img/logo-white.png" alt="Logo white">
+                    <img class="animate__animated animate__fadeInUp" src="./img/logo-white.png" alt="Logo white">
                 </a>
-                <div class="nav-wrapper hidden visible-lg-flex">
-                    <div class="nav-buttons">home</div>
-                    <div class="nav-buttons">features</div>
-                    <div class="nav-buttons">pages</div>
-                    <div class="nav-buttons">screenshots</div>
-                    <div class="nav-buttons">pricing</div>
-                    <div class="nav-buttons">contact</div>
+                <nav class="nav-wrapper hidden visible-lg-flex">
+                    <div class="nav-buttons" data-hover-button >
+                        <a href="#">home <span class="fa fa-caret-down"></span></a>
+                        <div class="nav-buttons-1" data-dropdown-1 >
+                            <div>
+                                <a href="#">Homepage-1</a>
+                            </div>
+                            <div>
+                                <a href="#">Homepage-2</a>
+                            </div>
+                            <div>
+                                <a href="#">Homepage-3</a>
+                            </div>
+                            <div>
+                                <a href="#">Homepage-4</a>
+                            </div>
+                            <div>
+                                <a href="#">Homepage-5</a>
+                            </div>
+                            <div>
+                                <a href="#">Homepage-6</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <a href="#">features</a>
+                    </div>
+                    <div class="nav-buttons" data-hover-button >
+                        <a href="#">pages <span class="fa fa-caret-down"></span></a>
+                        <div class="nav-buttons-1" data-dropdown-1 >
+                            <div><a href="#">inner pages</a>
+                            </div>
+                            <div><a href="#">blog pages</a>
+                            </div>
+                            <div><a href="#">blog details</a>
+                            </div>
+                            <div><a href="#">accounts</a>
+                            </div>
+                            <div><a href="#">reviews</a>
+                            </div>
+                            <div><a href="#">faq</a>
+                            </div>
+                            <div><a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-buttons ">
+                        <a href="#">screenshots</a>
+                    </div>
+                    <div class="nav-buttons">
+                        <a href="#">pricing</a>
+                    </div>
+                    <div class="nav-buttons">
+                        <a href="#">contact</a>
+                    </nav>
                 </div>
                 <div class="fa fa-bars hamburger-navbar visible hidden-lg"></div>
             </div>
@@ -345,7 +393,7 @@
 
     <!-- Footer start -->
     <!-- Footer end -->
-
+<script src="./js/pages/home.js" type="module" defer></script>
 </body>
 
 </html>

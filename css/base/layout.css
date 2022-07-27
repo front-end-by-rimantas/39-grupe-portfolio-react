@@ -143,6 +143,15 @@
     margin-left: var(--ml11);
 }
 
+@media (min-width: 480px) {
+    :root {
+        --half-gap: 15px;
+    }
+    .visible-ss {
+        display: inline-block !important;
+    }
+}
+
 @media (min-width: 576px) {
     :root {
         --half-gap: 15px;

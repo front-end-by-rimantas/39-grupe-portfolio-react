@@ -737,6 +737,9 @@ margin: 10px 0;
 /* Frequently Asked Questions end */
 
 /* Our Team Experts start */
+.section-white{
+  background-color: var(--section-white);
+}
 .our-team-margin-bottom{
   margin-bottom: 60px !important;
 }
@@ -771,7 +774,7 @@ margin: 10px 0;
 .our-team-image-wrapper{
   position: relative;
   overflow: hidden;
-  border-radius: 90px;
+  border-radius: 35%;
 }
 .our-team-image-wrapper img{
   object-fit: cover;
@@ -788,7 +791,7 @@ margin: 10px 0;
   justify-content: center;
   width: 100%;
   height: 100%;
-  border-radius: 90px;
+  border-radius: 35%;
   transition: all 0.3s;
   z-index: 1;
   opacity: 0;

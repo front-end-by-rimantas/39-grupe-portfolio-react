@@ -572,7 +572,7 @@ text-align: center;
 }
 
 .img {
-width: 70%;
+width: 55%;
   }
 
 .dotis {
@@ -654,13 +654,18 @@ animation: opacity 3s both;
 .fa {
   margin: 0 2px;
 }
+@media (min-width: 480px) {
+  .carousel-one > .img{
+    width: 45%;
+  }
+} 
 
 @media (min-width: 576px) {
 .sbtitle {
     font-size: 30px;
   }
   .carousel-one > .img{
-    width: 50%;
+    width: 30%;
   }
 }
 
@@ -669,7 +674,7 @@ animation: opacity 3s both;
     font-size: 36px;
   }
   .carousel-one > .img{
-    width: 45%;
+    width: 30%;
   }
 }
 
@@ -678,7 +683,7 @@ animation: opacity 3s both;
     font-size: 40px;
   }
   .carousel-one > .img{
-    width: 30%;
+    width: 23%;
   }
 }
 

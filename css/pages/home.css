@@ -673,7 +673,7 @@ margin: 10px 0;
 
 .frequently-asked > h2{
     position: relative;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 40px;
     margin-bottom: 25px;
 }
@@ -725,8 +725,16 @@ margin: 10px 0;
   margin-bottom: 21px;
 }
 
-.text-columns > .column-one, .column-two > h4{
+.text-columns > .column-one, .column-two > h4 {
   color: black;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.column-one > h4 {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .row:after {

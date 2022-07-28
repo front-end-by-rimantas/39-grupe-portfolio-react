@@ -320,7 +320,7 @@ position: relative;
 }
 
 .container > .row > .eblock:hover, .eblock6:hover {
-  bottom: 12px;
+  bottom: 14px;
   box-shadow: 0 3px 20px 5px #0000001f;
   transition: transform 2s linear 2s; 
 }

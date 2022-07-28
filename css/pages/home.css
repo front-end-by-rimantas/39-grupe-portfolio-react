@@ -317,12 +317,12 @@ align-items: center;
 box-shadow: 0 3px 20px 0px #0000001f;
 margin-top: 33px;
 position: relative;
+transition: all 0.3s ease;
 }
 
 .container > .row > .eblock:hover, .eblock6:hover {
-  bottom: 14px;
   box-shadow: 0 3px 20px 5px #0000001f;
-  transition: transform 2s linear 2s; 
+  transform: translateY(-14px);
 }
 
 .container > .row > .eblock6  {
@@ -336,6 +336,7 @@ align-items: center;
 box-shadow: 0 4px 15px 5px #0000001f;
 margin-top: 33px;
 position: relative;
+transition: all 0.3s ease;
   }
 
 .icon {

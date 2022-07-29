@@ -9,9 +9,11 @@ body * {
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-
 }
-
+.container:not([class*="footer"]){
+    z-index: 1;
+    position: relative;
+}
 .section-grey{
     background-color: var(--section-grey);
 }

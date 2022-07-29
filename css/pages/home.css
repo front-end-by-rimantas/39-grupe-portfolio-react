@@ -699,18 +699,24 @@ margin: 10px 0;
   margin-top:20px;
   color: var(--text-grey);
   color: black;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .column-two {
   margin-top:20px;
   color: var(--text-grey);
   color: black;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .text-columns > .column-one >p {
   color: var(--text-grey);
   float: left;
   padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .text-columns > .column-two >p {
@@ -718,6 +724,8 @@ margin: 10px 0;
   float: right;
   width: 50%;
   padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .text-black > p{
   color: var(--text-grey);

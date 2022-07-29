@@ -310,24 +310,33 @@ line-height: 1.6;
 padding: 44px 36px;
 display: flex;
 text-align: center;
-border-radius: 10px;
+border-radius: 20px;
 background-color: #FFFFFF;
 flex-direction: column;
 align-items: center;
-box-shadow: 0 4px 15px #0008;
+box-shadow: 0 3px 20px 0px #0000001f;
 margin-top: 33px;
+position: relative;
+transition: all 0.3s ease;
+}
+
+.container > .row > .eblock:hover, .eblock6:hover {
+  box-shadow: 0 3px 20px 5px #0000001f;
+  transform: translateY(-14px);
 }
 
 .container > .row > .eblock6  {
 padding: 44px 36px;
 display: flex;
 text-align: center;
-border-radius: 10px;
+border-radius: 20px;
 background-color: #FFFFFF;
 flex-direction: column;
 align-items: center;
-box-shadow: 0 4px 15px #0008;
+box-shadow: 0 4px 15px 5px #0000001f;
 margin-top: 33px;
+position: relative;
+transition: all 0.3s ease;
   }
 
 .icon {

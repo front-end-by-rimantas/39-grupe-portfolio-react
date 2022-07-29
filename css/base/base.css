@@ -10,7 +10,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
-.container:not([class*="footer"]){
+.container:not([class*="no-relative"]){
     z-index: 1;
     position: relative;
 }

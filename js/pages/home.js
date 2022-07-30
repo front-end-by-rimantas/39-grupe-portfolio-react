@@ -1,3 +1,6 @@
+import {Lowercarousel} from "../components/Lowercarousel.js";
+import {presentationData} from "../data/presentationData.js";
+
 // header start
 const navHoverDOM = document.querySelectorAll('[data-hover-button]')
 const dropDownDOM = document.querySelectorAll('[data-dropdown-1]')
@@ -36,6 +39,16 @@ navHoverDOM[1].addEventListener("mouseleave", function () {
 
 // Simple & Beautiful start
 // Simple & Beautiful end
+
+// Simple & Beautiful start2
+
+const start = new Lowercarousel ('carosel_block', presentationData);
+start.render();
+
+// console.log(titleDOM.textContent);
+// console.log(titleDOM.innerText);
+
+// Simple & Beautiful end2
 
 // Unlock Full Power start
 // Unlock Full Power end

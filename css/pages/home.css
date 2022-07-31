@@ -95,7 +95,7 @@
     padding: 50px;
     background-color: #fff;
     border-radius: 5px;
-
+    margin-top: 38px;
   }
   .reg-form > h3{
     font-size: 2em;
@@ -116,10 +116,10 @@
     margin-bottom: 10px;
     box-shadow: #000;
     box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    outline: none;
+    padding-left: 15px;
   }
-  .reg-form > input::placeholder{
-    padding: 0 15px;
-}
+ 
   .reg-form > button{
     height: 50px;
     background-color: #5434DD;
@@ -171,6 +171,9 @@
     .hero{
       padding-top: 40px;
       height: 840px;
+    }
+    .hero > .hero-block > .reg-form{
+      margin-top: 0;
     }
   }
   @media (min-width: 1200px){
@@ -658,10 +661,6 @@ margin: 10px 0;
   .unlock-full-wrapper > h2{
     font-size: 40px;
   }
-  .section-grey{
-
-    margin-bottom: 585px;
-  }
 }
 @media (min-width: 1200px) {
   .justify-flex-section{
@@ -695,8 +694,6 @@ margin: 10px 0;
 
   height: 100%;
   background-color: #fff;
-
-  z-index: 1;
 }
 section.container.footer > .links-block > .mb-30{
   margin-bottom: 30px;
@@ -925,7 +922,12 @@ a.google:hover > .svg-google-h{
   left: 0;
   right: 0;
    max-height: 585px;
-   z-index: 0;
+   z-index: -1;
 }
 }
+@media (min-width: 992px){
+  html, body{
+      margin-bottom: 292px;
+  }
+  }
 /* Footer end */

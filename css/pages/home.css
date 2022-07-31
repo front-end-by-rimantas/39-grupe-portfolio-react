@@ -905,6 +905,103 @@ animation: opacity 3s both;
 /* Unlock Full Power end */
 
 /* Frequently Asked Questions start */
+.paragraph-black{
+  color: var(--text-grey);
+}
+  
+.frequently-asked{
+    text-align: center;
+}
+
+.frequently-asked > h2{
+    position: relative;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.frequently-asked > h2::after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  left: 50%;
+  bottom: -15px;
+  width: 2em;
+  background-color: var(--color-purple);
+  transform: translateX(-50%);
+}
+
+.frequently-asked > p{
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: var(--text-grey);
+  }
+
+.column-one {
+  margin-top:20px;
+  color: var(--text-grey);
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column-two {
+  margin-top:20px;
+  color: var(--text-grey);
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-columns > .column-one >p {
+  color: var(--text-grey);
+  float: left;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-columns > .column-two >p {
+  color: var(--text-grey);
+  float: right;
+  width: 50%;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-black > p{
+  color: var(--text-grey);
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+.text-columns > .column-one, .column-two > h4 {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.column-one > h4 {
+  color: black;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear:both;
+}
+
+.container .row > .link-text{
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 500;
+  color: #000;
+}
+.row > .link-text> a{
+  color: #000;
+}
 /* Frequently Asked Questions end */
 
 /* Our Team Experts start */

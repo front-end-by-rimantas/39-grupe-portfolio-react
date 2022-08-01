@@ -8,7 +8,8 @@ const presentationData = [
         icons3: "fa fa-star",
         icons4: "fa fa-star",
         icons5: "fa fa-star-o",
-        tags: ['a'],
+        tags: ['b','c'],
+        tag:['a']
     },
      {
         image: './img/avatar-2.png',
@@ -19,7 +20,8 @@ const presentationData = [
         icons3: "fa fa-star",
         icons4: "fa fa-star",
         icons5: "fa fa-star",
-        tags: ['b'],
+        tags: ['a','c'],
+        tag:['b']
     },
      {
         image: './img/avatar-3.png',
@@ -30,7 +32,8 @@ const presentationData = [
         icons3: "fa fa-star",
         icons4: "fa fa-star",
         icons5: "fa fa-star-o",
-        tags: ['c'],
+        tags: ['a','b'],
+        tag:['c']
     },
 ];
 

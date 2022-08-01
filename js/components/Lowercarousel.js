@@ -48,7 +48,7 @@ class Lowercarousel {
     }
 
     isValidServiceItem(item) {
-        if (!this.isTrueObject(item, 9)
+        if (!this.isTrueObject(item, 10)
             || !this.isValidString(item.image)
             || !this.isValidString(item.desc)
             || !this.isValidString(item.icons)
@@ -62,7 +62,7 @@ class Lowercarousel {
     }
 
     filterHTML() {
-    const allTags = ['All'];
+    const allTags = [''];
     let HTML = `<div class="item">${allTags[0]}</div>`;
     
     for (const item of presentationData) {
@@ -82,7 +82,7 @@ class Lowercarousel {
     let HTML = '';
 
     for (const serviceItem of this.data) {
-        HTML += `<div class=blocss col-12 col-sm-12 col-md-12 col-lg-6 ml-lg-3>
+        HTML += `<div class=blocss blokas${serviceItem.tag} col-12 col-sm-12 col-md-12 col-lg-12 >
         <img class="photo-1" src='${serviceItem.image}' alt="photo1">
         <p class="presentation-1">${serviceItem.desc}</p>
         <p class="adress">${serviceItem.adress}</p>
@@ -124,23 +124,25 @@ class Lowercarousel {
 //}     
         this.DOM.classList.add('present_block');
         this.DOM.innerHTML = `<div class="list">${this.listHTML()}</div>
-        <div class="dotiss">${this.filterHTML()}</div>`;
+        <div class="item">${this.filterHTML()}</div>`;
 
-        const filterTag = document.querySelectorAll('.dotiss > .dots'); 
-        console.log(filterTag); 
-        const blocksss = this.DOM.querySelectorAll('.list > .blocss');
+        const filterTag = document.querySelectorAll('.dotiss > .dotss');  
+        const blocksss = document.querySelectorAll('.list > .blocss');
         console.log(blocksss); 
-        
+        console.log(filterTag);
+
+
         for (const filterTags of filterTag)  {
             filterTags.addEventListener('click', () => {
              const tag = filterTags.textContent;
+        console.log(filterTags.textContent);
 
-             for (let i = 0; i < 1; i++) {
+             for (let i = 0; i < this.data.length; i++) {
                 let cardData = this.data[i];
-                if (cardData.tags.includes(tag)|| tag === 'All') {
-                    blocksss[i].classList.remove('hidden');
-                } else {
+                if (cardData.tags.includes(tag)|| tag === 'ALL') {
                     blocksss[i].classList.add('hidden');
+                } else {
+                    blocksss[i].classList.remove('hidden');
                 }
             }
         })

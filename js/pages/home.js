@@ -42,7 +42,7 @@ navHoverDOM[1].addEventListener("mouseleave", function () {
 
 // Simple & Beautiful start2
 
-const start = new Lowercarousel ('carosel_block', presentationData);
+new Lowercarousel ('carosel_block', presentationData);
 
 
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/pages/home.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
@@ -20,17 +30,65 @@
         <div class="row">
             <div class="col-12 flex-wrap">
                 <a href="#">
-                    <img src="./img/logo-white.png" alt="Logo white">
+                    <img class="animate__animated animate__fadeInUp" src="./img/logo-white.png" alt="Logo white">
                 </a>
-                <div class="nav-wrapper hidden visible-lg-flex">
-                    <div class="nav-buttons">home</div>
-                    <div class="nav-buttons">features</div>
-                    <div class="nav-buttons">pages</div>
-                    <div class="nav-buttons">screenshots</div>
-                    <div class="nav-buttons">pricing</div>
-                    <div class="nav-buttons">contact</div>
+                <nav class="nav-wrapper hidden visible-lg-flex">
+                    <div class="nav-buttons" data-hover-button >
+                        <a href="#">home <span class="fa fa-caret-down"></span></a>
+                        <div class="nav-buttons-1" data-dropdown-1 >
+                            <div>
+                                <a href="#">Homepage-1</a>
+                            </div>
+                            <div>
+                                <a href="#">Homepage-2</a>
+                            </div>
+                            <div>
+                                <a href="#">Homepage-3</a>
+                            </div>
+                            <div>
+                                <a href="#">Homepage-4</a>
+                            </div>
+                            <div>
+                                <a href="#">Homepage-5</a>
+                            </div>
+                            <div>
+                                <a href="#">Homepage-6</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-buttons">
+                        <a href="#">features</a>
+                    </div>
+                    <div class="nav-buttons" data-hover-button >
+                        <a href="#">pages <span class="fa fa-caret-down"></span></a>
+                        <div class="nav-buttons-1" data-dropdown-1 >
+                            <div><a href="#">inner pages</a>
+                            </div>
+                            <div><a href="#">blog pages</a>
+                            </div>
+                            <div><a href="#">blog details</a>
+                            </div>
+                            <div><a href="#">accounts</a>
+                            </div>
+                            <div><a href="#">reviews</a>
+                            </div>
+                            <div><a href="#">faq</a>
+                            </div>
+                            <div><a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-buttons ">
+                        <a href="#">screenshots</a>
+                    </div>
+                    <div class="nav-buttons">
+                        <a href="#">pricing</a>
+                    </div>
+                    <div class="nav-buttons">
+                        <a href="#">contact</a>
+                    </nav>
+                    <div class="fa fa-bars hamburger-navbar visible hidden-lg"></div>
                 </div>
-                <div class="fa fa-bars hamburger-navbar visible hidden-lg"></div>
             </div>
         </div>
     </nav>
@@ -60,7 +118,7 @@
     <!-- hero end -->
 
     <!-- Express Functionality start -->
-    <section class="container">
+    <section class="container express-block">
        <div class="row">
         <div class="col-2 vectors">
         <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
@@ -230,6 +288,50 @@
     <!-- How sApp works end -->
 
     <!-- Simple & Beautiful start -->
+    <section class="container background-white">
+        <div class="row">
+            <div class="sbtop col-12"></div>
+                <div class="sbtitle">Simple & Beautiful interface</div>
+                <p class="col-12 sbtext visible hidden-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati</p>
+                <p class="col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-8 ml-xl-2 hidden visible-sm sbtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+        </div> 
+        <div class="row">
+            <div class="col-12 carousel-one">
+                <img class="img col-xxl-3 col-xl-3 col-lg-4 col-sm-6 col-12" src="./img/screenshot_1.jpg" alt="first">
+                <img class="img col-xxl-3 col-xl-3 col-lg-4 col-sm-6 hidden visible-ss" src="./img/screenshot_2.jpg" alt="second">
+                <img class="img col-xxl-3 col-xl-3 col-lg-4 hidden visible-sm"src="./img/screenshot_3.jpg" alt="third">
+                <img class="img col-xxl-3 col-xl-3 hidden visible-lg" src="./img/screenshot_4.jpg" alt="fourth">
+              <!-- <img class="img" src="./img/screenshot_5.jpg" alt="second"> -->
+            </div> 
+            <div class="col-12 dotis">
+                <span class="dots" onclick="/img/screenshot_1.jpg"></span>
+                <span class="dots" onclick="/img/screenshot_2.jpg"></span>
+                <span class="dots" onclick="/img/screenshot_3.jpg"></span>
+                <span class="dots" onclick="/img/screenshot_4.jpg"></span>
+                <span class="dots" onclick="/img/screenshot_5.jpg"></span>
+            </div>      
+        </div>  
+        <div class="row">    
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 ml-lg-3 presentation ">
+                <img class="photo-1" src="./img/avatar-1.png" alt="photo1">
+                <p class="presentation-1">John Doe</p>
+                <p class="adress">Los Angeles, California</p>
+                <div class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>           
+                <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
+                <div class="col-12 dotis">
+                    <span class="dots" onclick="/img/avatar-1"></span>
+                    <span class="dots" onclick="/img/avatar-2"></span>
+                    <span class="dots" onclick="/img/avatar-3"></span>
+               </div>  
+        </div>    
+      </div>
+    </section>
     <!-- Simple & Beautiful end -->
 
     <!-- Unlock Full Power start -->
@@ -266,18 +368,163 @@
     <!-- Unlock Full Power end -->
 
     <!-- Frequently Asked Questions start -->
+    <section class="container faq">
+        <div class="row questions">
+            <div class="col-12  frequently-asked">
+                <h2>Frequently Asked Questions</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+            </div>
+        </div>   
+        <div class="row">
+                <div class="col-12 col-md-6 column-one text-black">
+                    <h4>How to install sApp?</h4>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                    <h4>Can I get support from the author?</h4>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                    <h4>Do you have a free trial?</h4>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                    <div class="col-12 col-md-6 column-two text-black">
+                    <h4>How can I edit my personal information?</h4>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    <h4>Contact form isn't working?</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                    <h4>Contact form isn't working?</h4>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                </div>   
+        <p class="col-12 link-text">Haven't found suitable answer?<a href="#">Tell us what you need.</a></p>
+        </div>
+        
+</section>
+    
     <!-- Frequently Asked Questions end -->
 
     <!-- Our Team Experts start -->
+    <div class="container section-white">
+        <div id="our-team-structure" class="row our-team-margin-bottom">
+            <div class="our-team-text col-12 col-md-10 ml-md-1 col-lg-6 ml-lg-3">
+                <h2>Our Team Experts</h2>
+                <p class="visible hidden-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati</p>
+                <p class="hidden visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="our-team-image-wrapper col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="wrapper-absolute">
+                    <h4>Junaid Hasan</h4>
+                    <p>Founder & CEO</p>
+                    <div class="our-team-socials-flex">
+                    <a href="#"class="fa fa-facebook"></a>
+                    <a href="#"class="fa fa-twitter"></a>
+                    <a href="#"class="fa fa-google-plus"></a>
+                    <a href="#"class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <img src="./img/avatar-1.png" alt="profile-picture">
+            </div>
+            <div class="our-team-image-wrapper col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="wrapper-absolute">
+                    <h4>Jassica William</h4>
+                    <p>Co-Founder</p>
+                    <div class="our-team-socials-flex">
+                    <a href="#"class="fa fa-facebook"></a>
+                    <a href="#"class="fa fa-twitter"></a>
+                    <a href="#"class="fa fa-google-plus"></a>
+                    <a href="#"class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <img src="./img/avatar-2.png" alt="profile-picture">
+            </div>
+            <div class="our-team-image-wrapper col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="wrapper-absolute">
+                    <h4>Md. Arham</h4>
+                    <p>Web Designer</p>
+                    <div class="our-team-socials-flex">
+                    <a href="#"class="fa fa-facebook"></a>
+                    <a href="#"class="fa fa-twitter"></a>
+                    <a href="#"class="fa fa-google-plus"></a>
+                    <a href="#"class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <img src="./img/avatar-3.png" alt="profile-picture">
+            </div>
+            <div class="our-team-image-wrapper col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="wrapper-absolute">
+                    <h4>Yasmin Akter</h4>
+                    <p>Graphic Designer</p>
+                    <div class="our-team-socials-flex">
+                    <a href="#"class="fa fa-facebook"></a>
+                    <a href="#"class="fa fa-twitter"></a>
+                    <a href="#"class="fa fa-google-plus"></a>
+                    <a href="#"class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+                <img src="./img/avatar-4.png" alt="profile-picture">
+            </div>
+        </div>
+    </div>
     <!-- Our Team Experts end -->
 
     <!-- sApp is available start -->
+    <section class="container app-store">
+        <div class="row">
+            <div class="col-12 col-sm-12 ml-sm-0 col-md-10 ml-md-1 col-lg-8 ml-lg-2 store-content">
+                <h2 class="store-title">sApp is available for all devices</h2>
+                <p class="store-desc hidden visible-sm">
+                    sApp is available for all devices, consectetur adipisicing elit. Itaque at harum quam explicabo. Aliquam optio, delectus, dolorem quod neque eos totam. Delectus quae animi tenetur voluptates doloribus commodi dicta modi aliquid deserunt, quis maiores nesciunt autem, aperiam natus.
+                </p>
+                <p class="store-desc hidden-sm">sApp is available for all devices, consectetur adipisicing elit. Vel neque, cumque. Temporibus eligendi veniam, necessitatibus aut id labore nisi quisquam.</p>
+                <div class="link-block">
+                    <a href="#" class="store-link"><img src="./img/google-play.png" alt="google-play"></a>
+                    <a href="#" class="store-link"><img src="./img/app-store.png" alt="google-"></a>
+                </div>
+                <p class="footnote">* Available on iPhone, iPad and all Android devices</p>
+            </div>
+        </div>
+    </section>
     <!-- sApp is available end -->
 
     <!-- Subscribe to get updates start -->
     <!-- Subscribe to get updates end -->
 
     <!-- Stay Tuned start -->
+    <section class="container section-grey">
+        <div class="row">
+            <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-6 ml-xl-3 col-xxl-6 ml-xxl-3 title-side">
+                <h2>Stay Tuned</h2>
+                <p class="visible hidden-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati.</p>
+                <p class="hidden visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 stay-tuned-socials-flex">
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <a class="flex-lines" href="#">
+                    <div class="stay-tuned-box-wrap">
+                        <span class="fa fa-home"></span>
+                    </div>
+                    <div class="text">Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002</div>
+                </a>
+                <a class="flex-lines" href="#">
+                    <div class="stay-tuned-box-wrap">
+                        <span class="fa fa-phone"></span>
+                    </div>
+                    <div class="text">+1 230 456 789-012 345 6789</div>
+                </a>
+                <a class="flex-lines" href="#">
+                    <div class="stay-tuned-box-wrap">
+                        <span class="fa fa-envelope"></span>
+                    </div>
+                    <div class="text">exampledomain@domain.com</div>
+                </a>
+            </div>
+            <form class="col-12 col-md-6 col-lg-6 ml-lg-1 form-flex">
+                <input class="name" placeholder="Name" type="text" required>
+                <input class="email" placeholder="Email" type="email" required>
+                <input class="subject" placeholder="Subject" type="text" required>
+                <textarea placeholder="Message"></textarea>
+                <button type="submit"><span class="fa fa-paper-plane"></span> Send Message</button>
+            </form>
+        </div>
+    </section>
     <!-- Stay Tuned end -->
 
     <!-- Footer start -->
@@ -341,7 +588,7 @@
         </div>
     </section>
     <!-- Footer end -->
-
+<script src="./js/pages/home.js" type="module" defer></script>
 </body>
 
 </html>

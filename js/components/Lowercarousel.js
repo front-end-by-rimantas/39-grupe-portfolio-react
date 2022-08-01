@@ -11,22 +11,20 @@ class Lowercarousel {
     }
 
     init() {
-        if (!this.isValidSelector()
-            || !this.findTargetElement()
-            || !this.isValidData()) {
+        if (!this.isValidSelector()) {
             return false;
         }
 
         this.render();
-        this.event();
     }
 
     isValidSelector() {
-        if (typeof this.selector !== 'number'
-            || this.selector === '') {
-            return false;
-        }
-        return true;
+        if (typeof this.selector !== 'string'
+        || this.selector === '') {
+        return false;
+    }
+    this.DOM = document.getElementById(this.selector);
+    return !!this.DOM;
     }
 
 
@@ -64,7 +62,7 @@ class Lowercarousel {
     }
 
     filterHTML() {
-    const allTags = [];
+    const allTags = ['All'];
     let HTML = `<div class="item">${allTags[0]}</div>`;
     
     for (const item of presentationData) {
@@ -84,7 +82,7 @@ class Lowercarousel {
     let HTML = '';
 
     for (const serviceItem of this.data) {
-        HTML = `<div class=blocss col-12 col-sm-12 col-md-12 col-lg-6 ml-lg-3>
+        HTML += `<div class=blocss col-12 col-sm-12 col-md-12 col-lg-6 ml-lg-3>
         <img class="photo-1" src='${serviceItem.image}' alt="photo1">
         <p class="presentation-1">${serviceItem.desc}</p>
         <p class="adress">${serviceItem.adress}</p>
@@ -123,23 +121,31 @@ class Lowercarousel {
        //     </div>           
        //     <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
        //     `; 
-//
-       // } DOM.innerHTML = HTML;
-        const DOM = document.getElementById(this.selector);
-       
-        DOM.innerHTML = `<div class="list">${this.listHTML()}</div>
+//}     
+        this.DOM.classList.add('present_block');
+        this.DOM.innerHTML = `<div class="list">${this.listHTML()}</div>
         <div class="dotiss">${this.filterHTML()}</div>`;
-                             
+
+        const filterTag = document.querySelectorAll('.dotiss > .dots'); 
+        console.log(filterTag); 
+        const blocksss = this.DOM.querySelectorAll('.list > .blocss');
+        console.log(blocksss); 
+        
+        for (const filterTags of filterTag)  {
+            filterTags.addEventListener('click', () => {
+             const tag = filterTags.textContent;
+
+             for (let i = 0; i < 1; i++) {
+                let cardData = this.data[i];
+                if (cardData.tags.includes(tag)|| tag === 'All') {
+                    blocksss[i].classList.remove('hidden');
+                } else {
+                    blocksss[i].classList.add('hidden');
+                }
+            }
+        })
     }
-
-
-
-    event () {
-        const filterTag = document.querySelectorAll('.dotiss > .dots');
-        console.log(filterTag);
-
-    }
-    
+}
 }
 
 

@@ -1,7 +1,10 @@
+import { presentationData } from "../data/presentationData.js";
+
 class Lowercarousel {
     constructor(selector, data) {
         this.selector = selector;
         this.data = data;
+        this.DOM = null;
        
    
         this.init();
@@ -58,32 +61,73 @@ class Lowercarousel {
         }
         return true;
     }
-   
-        render() {
-            let HTML = '';
 
-        for (const serviceItem of this.data) {
-            if (!this.isValidServiceItem(serviceItem)) {
-                continue;
-            }
-
-            HTML += `
-            <img class="photo-1" src='${serviceItem.image}' alt="photo1">
-            <p class="presentation-1">${serviceItem.desc}</p>
-            <p class="adress">${serviceItem.adress}</p>
-            <div class="star">
-                <i class="${serviceItem.icons}" aria-hidden="true"></i>
-                <i class="${serviceItem.icons2}" aria-hidden="true"></i>
-                <i class="${serviceItem.icons3}" aria-hidden="true"></i>
-                <i class="${serviceItem.icons4}" aria-hidden="true"></i>
-                <i class="${serviceItem.icons5}" aria-hidden="true"></i>
-            </div>           
-            <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
-            `; 
-
+    filterHTML() {
+    const allTags = ['All'];
+    let HTML = `<div class="item>${allTags[0]}</div>`;
+    
+    for (const item of presentationData) {
+        for (const tag of item.tags) {
+            if (allTags.includes (tag)) {
+            allTags.push(tag);
+            HTML += `<div class="item>${tag}</div>`;
         }
+      }
+    }
+    return HTML;
+    }
+   
+
+    listHTML() {
+
+    let HTML = '';
+
+    for (const serviceItem of this.data) {
+        HTML += `
+        <img class="photo-1" src='${serviceItem.image}' alt="photo1">
+        <p class="presentation-1">${serviceItem.desc}</p>
+        <p class="adress">${serviceItem.adress}</p>
+        <div class="star">
+            <i class="${serviceItem.icons}" aria-hidden="true"></i>
+            <i class="${serviceItem.icons2}" aria-hidden="true"></i>
+            <i class="${serviceItem.icons3}" aria-hidden="true"></i>
+            <i class="${serviceItem.icons4}" aria-hidden="true"></i>
+            <i class="${serviceItem.icons5}" aria-hidden="true"></i>
+        </div>           
+        <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
+        `; 
+    }
+
+
+    return HTML;
+    }
+    
+    render() {
+ //       let HTML = '';
+   // for (const serviceItem of this.data) {
+     ////       if (!this.isValidServiceItem(serviceItem)) {
+       ////         continue;
+       //  //   }
+//
+       //    // <!--   HTML = `
+       //     <img class="photo-1" src='${serviceItem.image}' alt="photo1">
+       //     <p class="presentation-1">${serviceItem.desc}</p>
+       //     <p class="adress">${serviceItem.adress}</p>
+       //     <div class="star">
+       //         <i class="${serviceItem.icons}" aria-hidden="true"></i>
+       //         <i class="${serviceItem.icons2}" aria-hidden="true"></i>
+       //         <i class="${serviceItem.icons3}" aria-hidden="true"></i>
+       //         <i class="${serviceItem.icons4}" aria-hidden="true"></i>
+       //         <i class="${serviceItem.icons5}" aria-hidden="true"></i>
+       //     </div>           
+       //     <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
+       //     `; 
+//
+       // } DOM.innerHTML = HTML;
         const DOM = document.getElementById(this.selector);
-        DOM.innerHTML = HTML;
+       
+        DOM.innerHTML = `<div class="filter">${this.filterHTML()}</div>
+                             <div class="list">${this.listHTML()}</div>`;
     }
 
 }

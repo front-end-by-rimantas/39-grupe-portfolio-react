@@ -1,5 +1,4 @@
 const presentationData = [
-   
    {
         image: './img/avatar-1.png',
         desc: 'John Doe',
@@ -11,7 +10,6 @@ const presentationData = [
         icons5: "fa fa-star-o",
         tags: ['a'],
     },
-
      {
         image: './img/avatar-2.png',
         desc: 'Jassica William',
@@ -23,7 +21,6 @@ const presentationData = [
         icons5: "fa fa-star",
         tags: ['b'],
     },
-
      {
         image: './img/avatar-3.png',
         desc: 'Johnson Smith',
@@ -36,5 +33,6 @@ const presentationData = [
         tags: ['c'],
     },
 ];
+
 
 export { presentationData }

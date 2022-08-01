@@ -45,6 +45,14 @@ navHoverDOM[1].addEventListener("mouseleave", function () {
 const start = new Lowercarousel ('carosel_block', presentationData);
 start.render();
 
+const filterTag = document.querySelectorAll('.dotiss > .dots');
+console.log(filterTag);
+
+for (const filterTags of filterTag)  {
+    filterTags.addEventListener('click', () => {
+     console.log(filterTags);
+    })
+}
 
 //const paieska = document.getElementById("lower_carousel");
  //paieska.forEach(    

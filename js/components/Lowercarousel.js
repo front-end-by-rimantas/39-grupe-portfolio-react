@@ -18,6 +18,7 @@ class Lowercarousel {
         }
 
         this.render();
+        this.event();
     }
 
     isValidSelector() {
@@ -63,14 +64,14 @@ class Lowercarousel {
     }
 
     filterHTML() {
-    const allTags = ['All'];
-    let HTML = `<div class="item>${allTags[0]}</div>`;
+    const allTags = [];
+    let HTML = `<div class="item">${allTags[0]}</div>`;
     
     for (const item of presentationData) {
         for (const tag of item.tags) {
             if (allTags.includes (tag)) {
             allTags.push(tag);
-            HTML += `<div class="item>${tag}</div>`;
+            HTML += `<div class="item">${tag}</div>`;
         }
       }
     }
@@ -83,7 +84,7 @@ class Lowercarousel {
     let HTML = '';
 
     for (const serviceItem of this.data) {
-        HTML += `
+        HTML = `<div class=blocss col-12 col-sm-12 col-md-12 col-lg-6 ml-lg-3>
         <img class="photo-1" src='${serviceItem.image}' alt="photo1">
         <p class="presentation-1">${serviceItem.desc}</p>
         <p class="adress">${serviceItem.adress}</p>
@@ -95,7 +96,7 @@ class Lowercarousel {
             <i class="${serviceItem.icons5}" aria-hidden="true"></i>
         </div>           
         <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
-        `; 
+        </div>`; 
     }
 
 
@@ -126,18 +127,20 @@ class Lowercarousel {
        // } DOM.innerHTML = HTML;
         const DOM = document.getElementById(this.selector);
        
-        DOM.innerHTML = `<div class="filter">${this.filterHTML()}</div>
-                             <div class="list">${this.listHTML()}</div>`;
+        DOM.innerHTML = `<div class="list">${this.listHTML()}</div>
+        <div class="dotiss">${this.filterHTML()}</div>`;
+                             
     }
 
+
+
+    event () {
+        const filterTag = document.querySelectorAll('.dotiss > .dots');
+        console.log(filterTag);
+
+    }
+    
 }
-
-    //enableClicks() {
-        // cia aprasome veiksmu logika...
-        // susirandame skyles
-        // susirandame jungiklius
-        // kai jungiklis paspaustas: ijungiam/isjungiam atitinkama skyle
-
 
 
 export { Lowercarousel }

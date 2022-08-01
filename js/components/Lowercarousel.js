@@ -46,10 +46,14 @@ class Lowercarousel {
     }
 
     isValidServiceItem(item) {
-        if (!this.isTrueObject(item, 3)
+        if (!this.isTrueObject(item, 9)
             || !this.isValidString(item.image)
             || !this.isValidString(item.desc)
-            || !this.isValidString(item.adress)) {
+            || !this.isValidString(item.icons)
+            || !this.isValidString(item.icons2)
+            || !this.isValidString(item.icons3)
+            || !this.isValidString(item.icons4)
+            || !this.isValidString(item.icons5)) {
             return false;
         }
         return true;
@@ -63,27 +67,27 @@ class Lowercarousel {
                 continue;
             }
 
-            HTML += `<img class="photo-1" src='${serviceItem.image}' alt="photo1">
+            HTML += `
+            <img class="photo-1" src='${serviceItem.image}' alt="photo1">
             <p class="presentation-1">${serviceItem.desc}</p>
             <p class="adress">${serviceItem.adress}</p>
             <div class="star">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="${serviceItem.icons}" aria-hidden="true"></i>
+                <i class="${serviceItem.icons2}" aria-hidden="true"></i>
+                <i class="${serviceItem.icons3}" aria-hidden="true"></i>
+                <i class="${serviceItem.icons4}" aria-hidden="true"></i>
+                <i class="${serviceItem.icons5}" aria-hidden="true"></i>
             </div>           
             <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
-            <div class="col-12 dotis">
-                <span class="dots"></span>
-                <span class="dots"></span>
-                <span class="dots"></span>
-            </div>`;
+            `; 
+
         }
         const DOM = document.getElementById(this.selector);
         DOM.innerHTML = HTML;
     }
+
 }
+
     //enableClicks() {
         // cia aprasome veiksmu logika...
         // susirandame skyles

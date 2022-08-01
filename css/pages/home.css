@@ -674,7 +674,7 @@ border-radius: 100%;
 background-color: var(--color-purple);
 }
 
-.container > .row > .presentation {
+.presentation {
 display: flex;
 justify-content: center;
 flex-direction: column;

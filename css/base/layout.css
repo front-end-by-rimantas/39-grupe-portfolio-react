@@ -34,7 +34,7 @@
 --text-black: #202121;
 --text-grey: #565656;
 --color-indigo: #4b27fd;
---color-purple: #9334ff;
+--color-purple: #7c4fe0;
 }
 
 /* Page color section end */
@@ -141,6 +141,15 @@
 }
 .container > .row > .ml-11 {
     margin-left: var(--ml11);
+}
+
+@media (min-width: 480px) {
+    :root {
+        --half-gap: 15px;
+    }
+    .visible-ss {
+        display: inline-block !important;
+    }
 }
 
 @media (min-width: 576px) {

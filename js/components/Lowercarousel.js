@@ -16,6 +16,7 @@ class Lowercarousel {
         }
 
         this.render();
+        this.events();
     }
 
     isValidSelector() {
@@ -47,20 +48,7 @@ class Lowercarousel {
         return true;
     }
 
-    isValidServiceItem(item) {
-        if (!this.isTrueObject(item, 10)
-            || !this.isValidString(item.image)
-            || !this.isValidString(item.desc)
-            || !this.isValidString(item.icons)
-            || !this.isValidString(item.icons2)
-            || !this.isValidString(item.icons3)
-            || !this.isValidString(item.icons4)
-            || !this.isValidString(item.icons5)) {
-            return false;
-        }
-        return true;
-    }
-
+    
     filterHTML() {
     const allTags = [''];
     let HTML = `<div class="item">${allTags[0]}</div>`;
@@ -75,26 +63,27 @@ class Lowercarousel {
     }
     return HTML;
     }
-   
 
     listHTML() {
 
     let HTML = '';
 
     for (const serviceItem of this.data) {
-        HTML += `<div class=blocss blokas${serviceItem.tag} col-12 col-sm-12 col-md-12 col-lg-12 >
+        HTML += `<div class=blocss${serviceItem.tag} col-12 col-sm-12 col-md-12 col-lg-12 >
         <img class="photo-1" src='${serviceItem.image}' alt="photo1">
         <p class="presentation-1">${serviceItem.desc}</p>
         <p class="adress">${serviceItem.adress}</p>
         <div class="star">
-            <i class="${serviceItem.icons}" aria-hidden="true"></i>
+            <i class="${serviceItem.icons1}" aria-hidden="true"></i>
             <i class="${serviceItem.icons2}" aria-hidden="true"></i>
             <i class="${serviceItem.icons3}" aria-hidden="true"></i>
             <i class="${serviceItem.icons4}" aria-hidden="true"></i>
             <i class="${serviceItem.icons5}" aria-hidden="true"></i>
         </div>           
         <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
-        </div>`; 
+        </div>
+        `; 
+        
     }
 
 
@@ -102,35 +91,40 @@ class Lowercarousel {
     }
     
     render() {
- //       let HTML = '';
+  let HTML = '';
    // for (const serviceItem of this.data) {
      ////       if (!this.isValidServiceItem(serviceItem)) {
        ////         continue;
        //  //   }
-//
-       //    // <!--   HTML = `
-       //     <img class="photo-1" src='${serviceItem.image}' alt="photo1">
-       //     <p class="presentation-1">${serviceItem.desc}</p>
-       //     <p class="adress">${serviceItem.adress}</p>
-       //     <div class="star">
-       //         <i class="${serviceItem.icons}" aria-hidden="true"></i>
-       //         <i class="${serviceItem.icons2}" aria-hidden="true"></i>
-       //         <i class="${serviceItem.icons3}" aria-hidden="true"></i>
-       //         <i class="${serviceItem.icons4}" aria-hidden="true"></i>
-       //         <i class="${serviceItem.icons5}" aria-hidden="true"></i>
-       //     </div>           
-       //     <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
-       //     `; 
-//}     
+   HTML = `<div class=blocss col-12 col-sm-12 col-md-12 col-lg-12 >
+       <img class="photo-1" src="./img/avatar-1.png" alt="photo1">
+         <p class="presentation-1">John Doe</p>
+         <p class="adress">Los Angeles, California</p>
+         <div class="star">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star-o" aria-hidden="true"></i>
+         </div>           
+         <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p> 
+     </div>`
+        
+        
         this.DOM.classList.add('present_block');
         this.DOM.innerHTML = `<div class="list">${this.listHTML()}</div>
         <div class="item">${this.filterHTML()}</div>`;
+        
+}
 
-        const filterTag = document.querySelectorAll('.dotiss > .dotss');  
-        const blocksss = document.querySelectorAll('.list > .blocss');
-        console.log(blocksss); 
-        console.log(filterTag);
 
+events () { 
+        
+
+        const filterTag = document.querySelectorAll('.dotiss > .dots');  
+        const blocksss = document.querySelectorAll('.list > .blocssa, .blocssb, .blocssc');
+        console.log(blocksss);
+       
 
         for (const filterTags of filterTag)  {
             filterTags.addEventListener('click', () => {
@@ -140,12 +134,12 @@ class Lowercarousel {
              for (let i = 0; i < this.data.length; i++) {
                 let cardData = this.data[i];
                 if (cardData.tags.includes(tag)|| tag === 'ALL') {
-                    blocksss[i].classList.add('hidden');
+                    blocksss[i].classList.add('hidden') 
                 } else {
-                    blocksss[i].classList.remove('hidden');
+                    blocksss[i].classList.remove('hidden') || blocksss[i].classList.add('active') ;
                 }
             }
-        })
+    }    )
     }
 }
 }

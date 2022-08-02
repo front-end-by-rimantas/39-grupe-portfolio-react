@@ -96,22 +96,21 @@
 
     <!-- hero start -->
     <div class="container hero">
-        <!-- <img src="./img/blog-4.jpg" alt=""> -->
         <div class="row hero-block d-flex">
             <div class="col-12 col-md-12 col-lg-7 title-block">
                 <h1 class="title">Stay connected with your customers</h1>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
                 <button class="btn-start-app">START FREE TRIAL</button>
             </div>
-            <div class="col-12 col-md-8 ml-md-2 col-lg-5 ml-lg-0 reg-form">
+            <form class="col-12 col-md-8 ml-md-2 col-lg-5 ml-lg-0 reg-form">
                 <h3>Get started for FREE!</h3>
                 <p class="form-description">Fill all fields so we can get some info about you. We'll never send you spam</p>
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="tel" placeholder="Phone">
-                <button>Send Message</button>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone" required>
+                <button type="submit">Send Message</button>
                 <p class="terms">By signing up, you accept our <a href="#"> Terms</a> & <a href="#">Privacy Policy</a></p>
-            </div>
+            </form>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="shape-fill" fill="#FFFFFF" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg>
     </div>
@@ -296,21 +295,35 @@
                 <p class="col-md-10 ml-md-1 col-lg-8 ml-lg-2 col-xl-8 ml-xl-2 hidden visible-sm sbtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
         </div> 
         <div class="row">
-            <div class="col-12 carousel-one">
-                <img class="img col-xxl-3 col-xl-3 col-lg-4 col-sm-6 col-12" src="./img/screenshot_1.jpg" alt="first">
-                <img class="img col-xxl-3 col-xl-3 col-lg-4 col-sm-6 hidden visible-ss" src="./img/screenshot_2.jpg" alt="second">
-                <img class="img col-xxl-3 col-xl-3 col-lg-4 hidden visible-sm"src="./img/screenshot_3.jpg" alt="third">
-                <img class="img col-xxl-3 col-xl-3 hidden visible-lg" src="./img/screenshot_4.jpg" alt="fourth">
-              <!-- <img class="img" src="./img/screenshot_5.jpg" alt="second"> -->
-            </div> 
-            <div class="col-12 dotis">
-                <span class="dots" onclick="/img/screenshot_1.jpg"></span>
-                <span class="dots" onclick="/img/screenshot_2.jpg"></span>
-                <span class="dots" onclick="/img/screenshot_3.jpg"></span>
-                <span class="dots" onclick="/img/screenshot_4.jpg"></span>
-                <span class="dots" onclick="/img/screenshot_5.jpg"></span>
-            </div>      
-        </div>  
+            <div class="col-12">
+                <div class="carousel-container">
+                    <main class="slides">
+                        <div class="slide">
+                            <img src="./img/screenshot_1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/screenshot_2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/screenshot_3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/screenshot_4.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/screenshot_5.jpg" alt="">
+                        </div>
+                    </main>
+                    <div class="buttons col-12">
+                        <button class="carousel-button purple-clicked"></button>
+                        <button class="carousel-button"></button>
+                        <button class="carousel-button"></button>
+                        <button class="carousel-button"></button>
+                        <button class="carousel-button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">    
             <div class="col-12 col-sm-12 col-md-12 col-lg-6 ml-lg-3 presentation ">
                 <img class="photo-1" src="./img/avatar-1.png" alt="photo1">
@@ -330,7 +343,6 @@
                     <span class="dots" onclick="/img/avatar-3"></span>
                </div>  
         </div>    
-      </div>
     </section>
     <!-- Simple & Beautiful end -->
 
@@ -503,13 +515,13 @@
                     </div>
                     <div class="text">Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002</div>
                 </a>
-                <a class="flex-lines" href="#">
+                <a class="flex-lines" href="tel:+37069420666">
                     <div class="stay-tuned-box-wrap">
                         <span class="fa fa-phone"></span>
                     </div>
-                    <div class="text">+1 230 456 789-012 345 6789</div>
+                    <div class="text">+370 6 942 0666</div>
                 </a>
-                <a class="flex-lines" href="#">
+                <a class="flex-lines"  href="mailto:example@example.com">
                     <div class="stay-tuned-box-wrap">
                         <span class="fa fa-envelope"></span>
                     </div>

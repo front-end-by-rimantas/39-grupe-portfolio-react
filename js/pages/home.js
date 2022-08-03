@@ -1,3 +1,6 @@
+import {Lowercarousel} from "../components/Lowercarousel.js";
+import {presentationData} from "../data/presentationData.js";
+
 // header start
 const navHoverDOM = document.querySelectorAll('[data-hover-button]')
 const dropDownDOM = document.querySelectorAll('[data-dropdown-1]')
@@ -109,6 +112,12 @@ for (let i = 0; i < slideEachDOM.length; i++) {
 // Simple & Beautiful end top
 
 // Simple & Beautiful end
+
+// Simple & Beautiful start2
+
+new Lowercarousel ('carosel_block', presentationData);
+
+// Simple & Beautiful end2
 
 // Unlock Full Power start
 // Unlock Full Power end

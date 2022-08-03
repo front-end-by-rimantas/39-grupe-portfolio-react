@@ -44,21 +44,6 @@ navHoverDOM[1].addEventListener("mouseleave", function () {
 
 new Lowercarousel ('carosel_block', presentationData);
 
-
-
-//const paieska = document.getElementById("lower_carousel");
- //paieska.forEach(    
- //const buttonHTML = Array.from(start, ()  => {
-    //return `<span class="dotss"></span>`;
- //});
-
-//console.log(buttonHTML);
-//;)
-
-
-// console.log(titleDOM.textContent);
-// console.log(titleDOM.innerText);
-
 // Simple & Beautiful end2
 
 // Unlock Full Power start

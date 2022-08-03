@@ -18,7 +18,8 @@ class Lowercarousel {
         this.render();
         this.events();
     }
-
+ 
+//verification//    
     isValidSelector() {
         if (typeof this.selector !== 'string'
         || this.selector === '') {
@@ -48,7 +49,7 @@ class Lowercarousel {
         return true;
     }
 
-    
+//functions//   
     filterHTML() {
     const allTags = [''];
     let HTML = `<div class="item">${allTags[0]}</div>`;
@@ -91,25 +92,6 @@ class Lowercarousel {
     }
     
     render() {
-  let HTML = '';
-   // for (const serviceItem of this.data) {
-     ////       if (!this.isValidServiceItem(serviceItem)) {
-       ////         continue;
-       //  //   }
-   HTML = `<div class=blocss col-12 col-sm-12 col-md-12 col-lg-12 >
-       <img class="photo-1" src="./img/avatar-1.png" alt="photo1">
-         <p class="presentation-1">John Doe</p>
-         <p class="adress">Los Angeles, California</p>
-         <div class="star">
-             <i class="fa fa-star" aria-hidden="true"></i>
-             <i class="fa fa-star" aria-hidden="true"></i>
-             <i class="fa fa-star" aria-hidden="true"></i>
-             <i class="fa fa-star" aria-hidden="true"></i>
-             <i class="fa fa-star-o" aria-hidden="true"></i>
-         </div>           
-         <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p> 
-     </div>`
-        
         
         this.DOM.classList.add('present_block');
         this.DOM.innerHTML = `<div class="list">${this.listHTML()}</div>
@@ -118,17 +100,17 @@ class Lowercarousel {
 }
 
 
-events () { 
+    events () { 
         
 
-        const filterTag = document.querySelectorAll('.dotiss > .dots');  
+        const filterTag = document.querySelectorAll('.dotiss > .dotss');  
         const blocksss = document.querySelectorAll('.list > .blocssa, .blocssb, .blocssc');
         console.log(blocksss);
        
 
         for (const filterTags of filterTag)  {
             filterTags.addEventListener('click', () => {
-             const tag = filterTags.textContent;
+            const tag = filterTags.textContent;
         console.log(filterTags.textContent);
 
              for (let i = 0; i < this.data.length; i++) {
@@ -139,9 +121,9 @@ events () {
                     blocksss[i].classList.remove('hidden') || blocksss[i].classList.add('active') ;
                 }
             }
-    }    )
-    }
-}
+        })
+      }
+   }
 }
 
 

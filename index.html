@@ -95,26 +95,28 @@
     <!-- header end -->
 
     <!-- hero start -->
-    <div class="container hero">
+    <section class="container hero">
         <!-- <img src="./img/blog-4.jpg" alt=""> -->
+    <div class="container hero">
         <div class="row hero-block d-flex">
             <div class="col-12 col-md-12 col-lg-7 title-block">
                 <h1 class="title">Stay connected with your customers</h1>
                 <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nihil tenetur minus quidem est deserunt molestias accusamus harum ullam tempore debitis et, expedita, repellat delectus aspernatur neque itaque qui quod.</p>
                 <button class="btn-start-app">START FREE TRIAL</button>
             </div>
-            <div class="col-12 col-md-8 ml-md-2 col-lg-5 ml-lg-0 reg-form">
+            <form class="col-12 col-md-8 ml-md-2 col-lg-5 ml-lg-0 reg-form">
                 <h3>Get started for FREE!</h3>
                 <p class="form-description">Fill all fields so we can get some info about you. We'll never send you spam</p>
-                <input type="text" name="name" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="tel" placeholder="Phone">
-                <button>Send Message</button>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone" required>
+                <button type="submit">Send Message</button>
+                <p class="terms">By signing up, you accept our <a href="#" target="_blank"> Terms</a> & <a href="#" target="_blank">Privacy Policy</a></p>
                 <p class="terms">By signing up, you accept our <a href="#"> Terms</a> & <a href="#">Privacy Policy</a></p>
-            </div>
+            </form>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"><path class="shape-fill" fill="#FFFFFF" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7  c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4  c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"></path></svg>
-    </div>
+    </section>
     <!-- hero end -->
 
     <!-- Express Functionality start -->
@@ -298,6 +300,41 @@
         <div  class="row present_block">   
             <div id="carosel_block" class="col-12 col-sm-12 col-md-12 col-lg-6 ml-lg-3 presentation">
               <simg class="photo-1" src="./img/avatar-1.png" alt="photo1">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="carousel-container">
+                    <main class="slides">
+                        <div class="slide">
+                            <img src="./img/screenshot_1.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/screenshot_2.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/screenshot_3.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/screenshot_4.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/screenshot_5.jpg" alt="">
+                        </div>
+                    </main>
+                    <div class="buttons col-12">
+                        <button class="carousel-button purple-clicked"></button>
+                        <button class="carousel-button"></button>
+                        <button class="carousel-button"></button>
+                        <button class="carousel-button"></button>
+                        <button class="carousel-button"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">    
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 ml-lg-3 presentation ">
+                <img class="photo-1" src="./img/avatar-1.png" alt="photo1">
+
                 <p class="presentation-1">John Doe</p>
                 <p class="adress">Los Angeles, California</p>
                 <div class="star">
@@ -316,6 +353,15 @@
             </div> 
             
       </div>
+
+                <p class="sbtext2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam rem sunt nulla ducimus expedita, incidunt laborum assumenda. Deleniti iste placeat nostrum incidunt rem laudantium, sapiente, cum, molestias unde, quidem labore.</p>
+                <div class="col-12 dotis">
+                    <span class="dots" onclick="/img/avatar-1"></span>
+                    <span class="dots" onclick="/img/avatar-2"></span>
+                    <span class="dots" onclick="/img/avatar-3"></span>
+               </div>  
+        </div>    
+
     </section>
     <!-- Simple & Beautiful end 
 
@@ -353,6 +399,35 @@
     <!-- Unlock Full Power end -->
 
     <!-- Frequently Asked Questions start -->
+    <section class="container faq background-white">
+        <div class="row questions">
+            <div class="col-12  frequently-asked">
+                <h2>Frequently Asked Questions</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+            </div>
+        </div>   
+        <div class="row">
+                <div class="col-12 col-md-6 column-one text-black">
+                    <h4>How to install sApp?</h4>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                    <h4>Can I get support from the author?</h4>
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                    <h4>Do you have a free trial?</h4>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                    <div class="col-12 col-md-6 column-two text-black">
+                    <h4>How can I edit my personal information?</h4>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    <h4>Contact form isn't working?</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                    <h4>Contact form isn't working?</h4>
+                    <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
+                </div>   
+        <p class="col-12 link-text">Haven't found suitable answer?<a href="#">Tell us what you need.</a></p>
+        </div>
+        
+</section>
+    
     <!-- Frequently Asked Questions end -->
 
     <!-- Our Team Experts start -->
@@ -459,13 +534,13 @@
                     </div>
                     <div class="text">Vestibulum nulla libero, convallis, tincidunt suscipit diam, DC 2002</div>
                 </a>
-                <a class="flex-lines" href="#">
+                <a class="flex-lines" href="tel:+37069420666">
                     <div class="stay-tuned-box-wrap">
                         <span class="fa fa-phone"></span>
                     </div>
-                    <div class="text">+1 230 456 789-012 345 6789</div>
+                    <div class="text">+370 6 942 0666</div>
                 </a>
-                <a class="flex-lines" href="#">
+                <a class="flex-lines"  href="mailto:example@example.com">
                     <div class="stay-tuned-box-wrap">
                         <span class="fa fa-envelope"></span>
                     </div>
@@ -484,6 +559,65 @@
     <!-- Stay Tuned end -->
 
     <!-- Footer start -->
+    <section class="container footer">
+        <div class="row links-block">
+            <div class="col-12 col-sm-6 col-lg-3 socials mb-30">
+                <a href="#" target="_blank"> <img src="./img/logo.png" alt="logo"></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
+                <div class="social-link">
+                    <a href="#" target="_blank" class="facebook">
+                        <svg class="svg-facebook" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                        <svg class="svg-facebook-h" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                    </a>
+                    <a href="#" target="_blank" class="twitter">
+                        <svg class="svg-twitter" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                        <svg class="svg-twitter-h" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                    </a>
+                    <a href="#" target="_blank" class="google">
+                        <svg class="svg-google" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-plus-g" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"></path></svg>
+                        <svg class="svg-google-h" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-plus-g" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"></path></svg>
+                    </a>
+                    <a href="#" target="_blank" class="vine">
+                        <svg class="svg-vine" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vine" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M384 254.7v52.1c-18.4 4.2-36.9 6.1-52.1 6.1-36.9 77.4-103 143.8-125.1 156.2-14 7.9-27.1 8.4-42.7-.8C137 452 34.2 367.7 0 102.7h74.5C93.2 261.8 139 343.4 189.3 404.5c27.9-27.9 54.8-65.1 75.6-106.9-49.8-25.3-80.1-80.9-80.1-145.6 0-65.6 37.7-115.1 102.2-115.1 114.9 0 106.2 127.9 81.6 181.5 0 0-46.4 9.2-63.5-20.5 3.4-11.3 8.2-30.8 8.2-48.5 0-31.3-11.3-46.6-28.4-46.6-18.2 0-30.8 17.1-30.8 50 .1 79.2 59.4 118.7 129.9 101.9z"></path></svg>
+                        <svg class="svg-vine-h" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vine" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M384 254.7v52.1c-18.4 4.2-36.9 6.1-52.1 6.1-36.9 77.4-103 143.8-125.1 156.2-14 7.9-27.1 8.4-42.7-.8C137 452 34.2 367.7 0 102.7h74.5C93.2 261.8 139 343.4 189.3 404.5c27.9-27.9 54.8-65.1 75.6-106.9-49.8-25.3-80.1-80.9-80.1-145.6 0-65.6 37.7-115.1 102.2-115.1 114.9 0 106.2 127.9 81.6 181.5 0 0-46.4 9.2-63.5-20.5 3.4-11.3 8.2-30.8 8.2-48.5 0-31.3-11.3-46.6-28.4-46.6-18.2 0-30.8 17.1-30.8 50 .1 79.2 59.4 118.7 129.9 101.9z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 useful mb-30">
+                <h3 class="f-title">Useful Links</h3>
+                <ul>
+                  <li> <a href="#" target="_blank">Home</a></li> 
+                  <li> <a href="#" target="_blank">About Us</a></li> 
+                  <li>  <a href="#" target="_blank">Services</a></li> 
+                  <li> <a href="#" target="_blank">Blog</a></li> 
+                  <li> <a href="#" target="_blank">Contact</a></li> 
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 help mb-30">
+                <h3 class="f-title">Product Help</h3>
+                   <ul>
+                 <li>   <a href="#" target="_blank">FAQ</a></li>
+                 <li>  <a href="#" target="_blank">Privacy Policy</a></li>
+                 <li>  <a href="#" target="_blank">Support</a></li>
+                 <li>  <a href="#" target="_blank">Terms & Conditions</a></li>
+                 <li>  <a href="#" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 download">
+                <h3 class="f-title">Download</h3>
+                <div class="download-app">
+                    <a href="#" target="_blank"><img src="./img/google-play-black.png" alt="google play"></a>
+                    <a href="#" target="_blank"><img src="./img/app-store-black.png" alt="aplle store"></a>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright-block">
+            <div class="col-12 copyright">
+               <p>&copy; Copyrights 2020 sApp All rights reserved.</p>
+               <p>Made with <i class="fa fa-heart"></i> By <a href="" target="_blank"> Theme Land</a></p>
+            </div>
+        </div>
+    </section>
     <!-- Footer end -->
 <script src="./js/pages/home.js" type="module" defer></script>
 </body>

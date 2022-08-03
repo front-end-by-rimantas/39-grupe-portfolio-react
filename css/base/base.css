@@ -1,3 +1,10 @@
+:root{
+    --slideCount: 1;
+    --gapCount: calc(var(--slideCount) - 1);
+    --slideWidth: 250px;
+    --gap-carousel: 10px;
+}
+
 body,
 body * {
     margin: 0;

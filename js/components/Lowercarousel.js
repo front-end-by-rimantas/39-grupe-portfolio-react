@@ -70,7 +70,7 @@ class Lowercarousel {
     let HTML = '';
 
     for (const serviceItem of this.data) {
-        HTML += `<div class=blocss${serviceItem.tag} col-12 col-sm-12 col-md-12 col-lg-12 >
+        HTML += `<div class=blocss${serviceItem.tag} presentation >
         <img class="photo-1" src='${serviceItem.image}' alt="photo1">
         <p class="presentation-1">${serviceItem.desc}</p>
         <p class="adress">${serviceItem.adress}</p>
